@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	font-family: 'Josefin Slab', serif;
+	font-family: Consolas, serif;
 	font-size: 20px;
 	line-height: 30px;
 	background-color: #AFAC9B;
@@ -9,12 +9,12 @@ body{
 header{
 	background-color: #1D1F1C;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 header h1{
-	color: #AFAC9B;
+	color: #579E40;
 	font-size: 35px;
 }
 
@@ -50,9 +50,18 @@ a:hover{
 footer{
 	background-color: #1D1F1C;
 	text-align: center;
-	color: #AFAC9B;
-	padding: 50px;
+	color: #579E40;
+	padding: 15px;
 }
+
+/*
+footer img{
+	border-radius: 170px;
+	width: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+*/
 
 footer p{
 	margin: 0;
