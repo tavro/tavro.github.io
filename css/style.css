@@ -96,3 +96,26 @@ li.nobullet{
 	list-style: none;
 	color: #473A43;
 }
+
+.tabs li a.tab {
+  color: #335B25;
+}
+
+.tabs li a.tab:hover {
+  color: #579E40;
+  text-decoration: underline;
+}
+
+.tabs li {
+  display: inline;
+  list-style-type: none;
+}
+.tabs{
+	width: 800;
+  text-align:center;
+}
+
+.selected{
+	color: #579E40;
+  text-decoration: underline;
+}
