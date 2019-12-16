@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tavro</title>
+    <link rel="icon" href="../../img/icon.png">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/WebBuild1.loader.js"></script>
+    <script>
+      var unityInstance = createUnityInstance("unityContainer", "Build/WebBuild1.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+	<header>
+		<h1 class="unselectable"> <big>\o/</big> > Retro Colors_ </h1>
+			<ul class="tabs">
+				<li class="nobullet"><a href="../../index.html" class="tab">About</a></li>
+				<li class="nobullet"><a href="../../games.html" class="tab">Games</a></li>
+				<li class="nobullet"><a href="../../programming.html" class="tab">Programming</a></li>
+				<li class="nobullet"><a href="../../work.html" class="tab">Work</a></li>
+				<li class="nobullet"><a href="../../school.html" class="tab">School</a></li>
+			</ul>
+	</header>
+	<main style="height: 800px">
+	<br><br><br>
+	<center>
+    	<div class="webgl-content">
+      		<div id="unityContainer" style="width: 960px; height: 600px"></div>
+      		<div class="footer">
+        		<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      		</div>
+    	</div>
+    </center>
+	</main>
+	<footer>
+		<p>This Website © Isak Horvath</p>
+	</footer>
+  </body>
+</html>
