@@ -71,6 +71,9 @@ footer{
 	text-align: center;
 	color: #579E40;
 	padding: 15px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
 }
 
 /*
