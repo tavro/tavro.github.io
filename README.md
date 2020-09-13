@@ -1,2 +1,2 @@
-# tavro.github.io aka isakhorvath.com
+# tavro.github.io
 My personal website
