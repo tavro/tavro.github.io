@@ -24,6 +24,60 @@ user-select: none;
 -ms-user-select: none;
 }
 
+.Projects {
+  margin-bottom: 1280px;
+}
+
+.Preview {
+  background-color: #1D1F1C;
+  width: 200px;
+  height: 196px;
+  border-radius: 32px;
+  text-align: center;
+  color: #579E40;
+  float: left;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.Preview p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.Tags {
+  outline: 2px solid black;
+  box-shadow: 0 0 4px #473A43;
+  height: 232px;
+  margin-bottom: 64px;
+}
+
+.Tags h2 {
+  padding-top: 16px;
+  margin-left: 16px;
+}
+
+.Tag p {
+  /*background-color: #1D1F1C;*/
+  width: 128px;
+  /*text-align: center;*/
+  /*color: #579E40;*/
+  color: #1D1F1C;
+  /*box-shadow: 0 0 4px #473A43;*/
+  /*border-radius: 8px;*/
+  font-size: 16px;
+  margin-left: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  float: left;
+}
+
+h2 {
+  clear:both;
+}
+
 .School {
   margin-bottom: 32px;
 }

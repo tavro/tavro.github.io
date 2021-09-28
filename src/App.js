@@ -9,14 +9,14 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
 } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <Route exact path="/" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/work" component={Work} />
