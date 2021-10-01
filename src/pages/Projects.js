@@ -6,7 +6,7 @@ function Projects() {
     const games = ["Party Penguin", "Monkey Farming Sim", "Retro Colors", "Flower Power", "Infecteria", "Eggplant Kindergarten", "Powered By Coal", "Pyramid Building Sim", "Garage Sale", "Animal Transmission", "Abandoned Tech", "Paniscu Island", "Surviva", "Blob", "Robber & Robert", "Compost Wars"]
   return (
     <div className="Projects">
-      <Header index={1}/>
+      <Header index={1} content="Ludum Dare 49 this weekend"/>
       <main>
           <h2>Games</h2>
 	  <p>Some of the games I've developed over the years.</p>

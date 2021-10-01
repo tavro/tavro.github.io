@@ -10,7 +10,7 @@ class About extends React.Component {
 	const languages = ["Assembly", "C", "C#", "C++", "CSS", "D", "Dart", "Go", "Python", "Perl", "Pascal", "PHP", "Rust", "R", "Ruby", "Java", "JavaScript", "Lua", "Common Lisp", "Haskell", "HTML"];
         return ( 
         <div className="About">
-	      <Header index={0}/>
+	      <Header index={0} content="Hey, this is me Isak"/>
 	      <main>
 	        <h2>About Me</h2>
 	        <p>I'm a software engineering student from Sweden.</p>

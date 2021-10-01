@@ -24,6 +24,16 @@ user-select: none;
 -ms-user-select: none;
 }
 
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .Projects {
   margin-bottom: 1280px;
 }

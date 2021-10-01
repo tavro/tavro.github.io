@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import {
   Link,
@@ -7,13 +7,34 @@ import {
 class Header extends React.Component {
 	constructor(props) {
         super(props);
+        this.state = {
+          word: ""
+        };   
     }
+
+    printWord = (word, time) => {
+        let index = 0;
+
+        for (let letter of word) {
+            index++;
+
+            setTimeout(() => {
+                this.setState((prevState) => ({
+                    word: prevState.word + letter
+                }));
+            }, index*time);
+        }
+    }
+
+	componentDidMount() {
+	    this.printWord(String(this.props.content), 50);
+	}
 
     render() {
         return ( 
           <div className={`Header`}>
           	<header>
-		    	<h1 class="unselectable"> <big>\o/</big> > Hey, this is me, Isak_ </h1>
+		    	<h1 class="unselectable"> <big>\o/</big> > { this.state.word } <span class="blink">_</span> </h1>
 		        <ul class="tabs">
 		        		<Link to='/'>
 			        		<li class="nobullet"><a class={this.props.index === 0 ? "selected" : "tab"}> About </a></li>

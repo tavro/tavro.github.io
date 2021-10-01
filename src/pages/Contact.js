@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 function Contact() {
   return (
     <div className="Contact">
-      <Header index={4}/>
+      <Header index={4} content="Feel free to contact me"/>
       <main>
         <h2>Contact Me</h2>
         <ul>

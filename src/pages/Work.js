@@ -4,10 +4,25 @@ import Footer from '../components/Footer';
 function Work() {
   return (
     <div className="Work">
-      <Header index={2}/>
+      <Header index={2} content="Just get ready for work, work, work, work"/>
       <main>
         <h2>Work</h2>
-        <ul>
+          <ul>
+	  <li>
+	  <a href="#" target="_blank">Datateknologsektionen</a>
+	  {/*
+	  <p><a href="#">Klassrepresentant</a></p>
+	  <p><a href="#">Labbassistent @ TDDE23</a></p>
+	   */}
+	  <p><a href="#">Webmaster @ WebbU</a></p>
+	  <img src="/work/webb.png" class="nondragable"/>
+	  <p><a href="#">Webb & Info @ STABEN</a></p>
+	  <img src="/work/staben.png" class="nondragable"/>
+	  </li>
+	  <li><a href="https://www.deepdialog.se/">Frontend Developer @ Deep Dialog</a></li>
+	  <img src="/work/deepdialog.png" class="nondragable"/>
+	  <li><a href="https://www.origogroup.com/">Interviewer @ Origo Group</a></li>
+	  <img src="/work/origo.jpg" class="nondragable"/>
           <li><a href="https://www.ungatio.se/" target="_blank" >Designer @ UNGATIO</a></li>
           <img src={'/work/ungatio.png'} class="nondragable"/>
           <li><a href="https://ldjam.com/users/liquidbrain/" target="_blank" >Gamedesigner @ Liquidbrain</a></li>
