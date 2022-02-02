@@ -1,7 +1,6 @@
 import '../App.css';
 
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function Contact() {
   return (
@@ -9,17 +8,9 @@ function Contact() {
       <Header index={4} content="Feel free to contact me"/>
       <main>
         <h2>Contact Me</h2>
-        <ul>
-          <li><a href="tel:072-313-1082">Phone</a></li>
-          <li><a href="mailto:isakhorvath@gmail.com">Mail</a></li>
-          <li><a href="https://www.instagram.com/isakhorvath/?hl=sv">Instagram</a></li>
-          <li><a href="https://www.linkedin.com/in/isak-horvath-683950165">LinkedIn</a></li>
-          <li><a href="https://www.facebook.com/people/Isak-Horvath/100006285705451">Facebook</a></li>
-          <li><a href="https://twitter.com/isakhorvath">Twitter</a></li>
-        </ul>
-        <p class="caption">List ordered based on how fast i reply</p>
+        <p>I'm currently rewriting this page from scratch, so the sign-in & up does not work at the moment.</p>
+        <p>In order to contact me through this website you have to <a href="#">log in</a>. If you do not have an account, please create one <a href="#">here</a>.</p>
       </main>
-      <Footer/>
     </div>
   );
 }

@@ -9,6 +9,7 @@ class Preview extends React.Component {
         <div className={`Preview`}>
 	    <p>{this.props.title}</p>
 	    <img src={this.props.img}/>
+	    <p>See more</p>
         </div>
         )
     }

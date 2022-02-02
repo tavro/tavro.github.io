@@ -37,19 +37,19 @@ class Header extends React.Component {
 		    	<h1 class="unselectable"> <big>\o/</big> > { this.state.word } <span class="blink">_</span> </h1>
 		        <ul class="tabs">
 		        		<Link to='/'>
-			        		<li class="nobullet"><a class={this.props.index === 0 ? "selected" : "tab"}> About </a></li>
+			        		<li class="nobullet"><a class={this.props.index === 0 ? "selected" : "tab"}>&nbsp;About </a></li>
 			        	</Link>
 			        	<Link to='/projects'>
-			        		<li class="nobullet"><a class={this.props.index === 1 ? "selected" : "tab"}> Projects </a></li>
+			        		<li class="nobullet"><a class={this.props.index === 1 ? "selected" : "tab"}>&nbsp;Projects </a></li>
 			        	</Link>
 			        	<Link to='/work'>
-			        		<li class="nobullet"><a class={this.props.index === 2 ? "selected" : "tab"}> Work </a></li>
+			        		<li class="nobullet"><a class={this.props.index === 2 ? "selected" : "tab"}>&nbsp;Work </a></li>
 			        	</Link>
 			        	<Link to='/school'>
-			        		<li class="nobullet"><a class={this.props.index === 3 ? "selected" : "tab"}> School </a></li>
+			        		<li class="nobullet"><a class={this.props.index === 3 ? "selected" : "tab"}>&nbsp;School </a></li>
 			         	</Link>
 			         	<Link to='/contact'>
-			         		<li class="nobullet"><a class={this.props.index === 4 ? "selected" : "tab"}> Contact </a></li>
+			         		<li class="nobullet"><a class={this.props.index === 4 ? "selected" : "tab"}>&nbsp;Contact&nbsp;</a></li>
 		    			</Link>
 		    	</ul>
 		  	</header>

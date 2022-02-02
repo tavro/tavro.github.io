@@ -23,7 +23,7 @@ function App() {
         <Route path="/school" component={School} />
         <Route path="/contact" component={Contact} />
       </Router>
-
+      <Footer/>
     </div>
   );
 }

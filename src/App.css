@@ -34,15 +34,9 @@ user-select: none;
   }
 }
 
-.Projects {
-  margin-bottom: 1280px;
-}
-
 .Preview {
   background-color: #1D1F1C;
-  width: 200px;
-  height: 196px;
-  border-radius: 32px;
+  border-radius: 4px;
   text-align: center;
   color: #579E40;
   float: left;
@@ -54,13 +48,17 @@ user-select: none;
 .Preview p {
   margin-bottom: 0px;
   margin-top: 0px;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.Langs{
+  /*
+  outline: 2px solid black;
+  box-shadow: 0 0 4px #473A43;
+  */
 }
 
 .Tags {
-  outline: 2px solid black;
-  box-shadow: 0 0 4px #473A43;
-  height: 232px;
   margin-bottom: 64px;
 }
 
@@ -90,6 +88,7 @@ h2 {
 
 .School {
   margin-bottom: 32px;
+  height: 2200px;
 }
 
 .School img {
@@ -114,26 +113,23 @@ background-color: #AFAC9B;
 
 header{
 background-color: #1D1F1C;
-text-align: center;
-padding-top: 15px;
-padding-bottom: 15px;
+padding-top: 8px;
+padding-bottom: 8px;
 }
 
 header h1{
 color: #579E40;
-font-size: 35px;
-}
-
-header img{
-border-radius: 170px;
-width: 300px;
-border: 5px solid #AFAC9B;
+font-size: 20px;
+margin-left: 32px;
+margin-right: 32px;
 }
 
 main{
 max-width: 800px;
 margin: 0 auto;
 padding: 20px;
+font-size: 16px;
+height: 1000px;
 }
 
 main img{
@@ -141,7 +137,7 @@ max-width: 100%;
 }
 
 h2{
-font-size: 30px;
+font-size: 25px;
 color: #473A43;	
 margin: 40px 0 10px;
 }
@@ -158,10 +154,11 @@ footer{
 background-color: #1D1F1C;
 text-align: center;
 color: #579E40;
-padding: 15px;
+padding: 4px;
 position: fixed;
 bottom: 0px;
 width: 100%;
+font-size: 15px;
 }
 
 footer p{
@@ -179,12 +176,18 @@ list-style: none;
 color: #473A43;
 }
 
+.tabs {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
 .tabs li a.tab {
+font-size: 15px;
 color: #335B25;
 }
 
 .tabs li a.tab:hover {
-color: #579E40;
+color: #637F5A;
 text-decoration: underline;
 }
 
@@ -192,12 +195,10 @@ text-decoration: underline;
 display: inline;
 list-style-type: none;
 }
-.tabs{
-width: 800;
-text-align:center;
-}
 
 .selected{
+font-weight: bold;
+font-size: 15px;
 color: #579E40;
 text-decoration: underline;
 }

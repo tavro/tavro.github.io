@@ -1,5 +1,4 @@
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function Work() {
   return (
@@ -7,39 +6,25 @@ function Work() {
       <Header index={2} content="Just get ready for work, work, work, work"/>
       <main>
         <h2>Work</h2>
-          <ul>
-	  <li>
-	  <a href="#" target="_blank">Datateknologsektionen</a>
-	  {/*
-	  <p><a href="#">Klassrepresentant</a></p>
-	  <p><a href="#">Labbassistent @ TDDE23</a></p>
-	   */}
-	  <p><a href="#">Webmaster @ WebbU</a></p>
-	  <img src="/work/webb.png" class="nondragable"/>
-	  <p><a href="#">Webb & Info @ STABEN</a></p>
-	  <img src="/work/staben.png" class="nondragable"/>
-	  </li>
-	  <li><a href="https://www.deepdialog.se/">Frontend Developer @ Deep Dialog</a></li>
-	  <img src="/work/deepdialog.png" class="nondragable"/>
-	  <li><a href="https://www.origogroup.com/">Interviewer @ Origo Group</a></li>
-	  <img src="/work/origo.jpg" class="nondragable"/>
-          <li><a href="https://www.ungatio.se/" target="_blank" >Designer @ UNGATIO</a></li>
-          <img src={'/work/ungatio.png'} class="nondragable"/>
-          <li><a href="https://ldjam.com/users/liquidbrain/" target="_blank" >Gamedesigner @ Liquidbrain</a></li>
-          <img src={'/work/brain.gif'} class="nondragable"/>
-          <li><a href="http://swedengamearena.com/" target="_blank" >Stage Assistant @ Sweden Game Arena</a></li>
-          <img src={'/work/stage.jpg'} class="nondragable"/>
-          <li><a href="https://www.tekniskaverken.se/evenemang/innovation-camp/innovation-camp/" target="_blank" >Innovation Camp @ Tekniska Verken</a></li>
-          <img src={'/work/camp.jpg'} class="nondragable"/>
-          <li><a href="https://www.forsvarsmakten.se/sv/" target="_blank" >Military Service @ Försvarsmakten</a></li>
-          <img src={'/work/military.jpg'} class="nondragable"/>
-          <li><a href="https://www.google.com/search?q=%C3%B6stg%C3%B6tatak&rlz=1C1GGRV_enSE759SE759&oq=%C3%B6stg%C3%B6tatak&aqs=chrome..69i57j69i59j69i61j69i60l2.2088j1j7&sourceid=chrome&ie=UTF-8" target="_blank" >Roofer @ Östgötatak</a></li>
-          <img src={'/work/tak.jpg'} class="nondragable"/>
-          <li><a href="http://stangsmagasin.se/sv/" target="_blank" >Dishwasher @ Stångs Magasin</a></li>
-          <img src={'/work/stangs.jpg'} class="nondragable"/>
-        </ul>
+        <li>
+            <b>Laboratory Assistant @ Linköping University</b>
+            <ul>2022 | TDDD78, OO-programming & Java</ul>
+            <ul>2021 | TDDE24, Functional & Imperative programming</ul>
+            <ul>2021 | TDDE23, Functional & Imperative programming</ul>
+        </li>
+        <li>
+            <b>LiU Formula Student</b>
+            <ul>2021 | Software Engineer @ Driverless</ul>
+            <ul>2021 | Server Manager</ul>
+        </li>
+        <li>
+            <b>Datateknologsektionen</b>
+            <ul>2021 | Webmaster @ WebbU</ul>
+            <ul>2021 | Web & Info @ STABEN</ul>
+        </li>
+        <p>2021 | Frontend Developer @ Deepdialog </p>
+        <p>2019 | Game Developer @ East Sweden Game </p>
       </main>
-      <Footer/>
     </div>
   );
 }
