@@ -20,7 +20,7 @@ class Contact extends Component {
 
     handle_login = (e, data) => {
         e.preventDefault();
-        fetch("http://isakhorvath-backend.herokuapp.com/current_user/", {
+        fetch("https://isakhorvath-backend.herokuapp.com/current_user/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ class Contact extends Component {
 
     handle_signup = (e, data) => {
         e.preventDefault();
-        fetch("http://isakhorvath-backend.herokuapp.com/users/", {
+        fetch("https://isakhorvath-backend.herokuapp.com/users/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
