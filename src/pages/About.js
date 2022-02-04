@@ -6,9 +6,9 @@ import Tag from '../components/Tag';
 class About extends React.Component {
     render() {
 	const languages = ["Assembly", "C", "C#", "C++", "CSS", "D", "Dart", "Go", "Python", "Perl", "Pascal", "PHP", "Rust", "R", "Ruby", "Java", "JavaScript", "Lua", "Common Lisp", "Haskell", "HTML"];
-        return ( 
+        return (
         <div className="About">
-	      <Header index={0} content="Hey, this is me, Isak"/>
+	      <Header index={0} content="Hey, this is me, Isak" logged_in={this.props.logged_in}/>
 	      <main>
 	        <h2>About Me</h2>
 	        <p>I'm a student from Sweden currently studying Computer Science and Software Engineering at Linköping University</p>
