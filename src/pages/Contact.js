@@ -13,7 +13,7 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            logged_in: localStorage.getItem('token') != "undefined"? true : false,
+            logged_in: localStorage.getItem('token') && localStorage.getItem('token') != "undefined"? true : false,
             username: ""
         };
     }
