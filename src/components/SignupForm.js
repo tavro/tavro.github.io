@@ -34,7 +34,7 @@ class SignupForm extends React.Component {
                 <input type="password" name="password" value={this.state.password} onChange={this.handle_change}/>
                 </p>
                 <p>
-                <input type="submit" id="submit"/>
+                <input type="submit" id="submit" value="Signup"/>
                 </p>
                 <p id="no-acc">Already have an account? <a onClick={this.props.toggle}>Login</a></p>
             </form>

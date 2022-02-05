@@ -50,6 +50,15 @@ class Header extends React.Component {
 			         	<Link to='/contact'>
 			         		<li class="nobullet"><a class={this.props.index === 4 ? "selected" : "tab"}>&nbsp;Contact&nbsp;</a></li>
 		    			</Link>
+		    			{
+		    			this.props.logged_in ?
+		    			<div>
+		    			    <Link to='/contact'>
+			         		    <li class="nobullet"><a class="tab" onClick={this.props.handle_logout}>&nbsp;Log out&nbsp;</a></li>
+		    			    </Link>
+		    			</div> :
+		    			<div></div>
+		    			}
 		    	</ul>
 		  	</header>
           </div>

@@ -4,8 +4,8 @@ import Header from '../components/Header';
 
 import LoginForm from '../components/LoginForm';
 import SignupForm from '../components/SignupForm';
+import MessageForm from '../components/MessageForm';
 import LoginSignupForm from '../components/LoginSignupForm';
-
 
 import React, {Component} from 'react';
 
@@ -13,9 +13,23 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            logged_in: false,
+            logged_in: localStorage.getItem('token') != "undefined"? true : false,
             username: ""
         };
+    }
+
+    componentDidMount() {
+        if (this.state.logged_in) {
+          fetch('https://isakhorvath-backend.herokuapp.com/current_user/', {
+            headers: {
+              Authorization: `JWT ${localStorage.getItem('token')}`
+            }
+          })
+            .then(res => res.json())
+            .then(json => {
+              this.setState({ username: json.username });
+            });
+        }
     }
 
     handle_login = (e, data) => {
@@ -62,16 +76,20 @@ class Contact extends Component {
     render() {
         return (
         <div className="Contact">
-          <Header index={4} content="Feel free to contact me"/>
+          <Header index={4} content="Feel free to contact me" logged_in={this.state.logged_in} handle_logout={this.handle_logout}/>
           <main>
             <h2>Contact Me</h2>
-            <p>I'm currently rewriting this page from scratch, so the sign-in & up does not work at the moment.</p>
             {
-            !this.state.username ?
+            !this.state.username && !this.state.logged_in ?
             <div>
+                <p>I'm currently rewriting this page from scratch, so the sign-in & up does not work at the moment.</p>
                 <LoginSignupForm handle_login={this.handle_login} handle_signup={this.handle_signup}/>
             </div>
-            : <p><a>{this.state.username}</a></p>
+            :
+            <div>
+                <p>You are currently logged in as: <a>{this.state.username}</a></p>
+                <MessageForm from={this.state.username}/>
+            </div>
             }
           </main>
         </div>
