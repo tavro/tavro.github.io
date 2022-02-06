@@ -68,6 +68,17 @@ class Contact extends Component {
         });
     };
 
+    handle_message = (e, data) => {
+        e.preventDefault();
+        fetch("https://isakhorvath-backend.herokuapp.com/messages/", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+    };
+
     handle_logout = () => {
         localStorage.removeItem("token");
         this.setState({logged_in: false, username:""});
@@ -80,7 +91,7 @@ class Contact extends Component {
           <main>
             <h2>Contact Me</h2>
             {
-            !this.state.username && !this.state.logged_in ?
+            !this.state.username || this.state.username.includes("This field may not be blank.") || !this.state.logged_in ?
             <div>
                 <p>I'm currently rewriting this page from scratch, so the sign-in & up does not work at the moment.</p>
                 <LoginSignupForm handle_login={this.handle_login} handle_signup={this.handle_signup}/>
@@ -88,7 +99,7 @@ class Contact extends Component {
             :
             <div>
                 <p>You are currently logged in as: <a>{this.state.username}</a></p>
-                <MessageForm from={this.state.username}/>
+                <MessageForm from={this.state.username} handle_message={this.handle_message}/>
             </div>
             }
           </main>

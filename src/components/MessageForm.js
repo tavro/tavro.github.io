@@ -4,8 +4,7 @@ class MessageForm extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {
-          from: this.props.from,
-          username: "isakhorvath",
+          from_user: String(this.props.from),
           subject: "Subject...",
           message: "Enter message here..."
         };
