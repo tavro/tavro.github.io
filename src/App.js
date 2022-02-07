@@ -1,15 +1,11 @@
 import './App.css';
 
-import Header from './components/Header';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import School from './pages/School';
 import Work from './pages/Work';
 import Projects from './pages/Projects';
 import About from './pages/About';
-
-import LoginForm from './components/LoginForm';
-import SignupForm from './components/SignupForm';
 
 import {
   HashRouter as Router,
@@ -37,20 +33,4 @@ class App extends Component {
     }
 }
 
-{/*
-function App() {
-  return (
-    <div className="App">
-      <Router basename="/">
-        <Route exact path="/" component={About} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/work" component={Work} />
-        <Route path="/school" component={School} />
-        <Route path="/contact" component={Contact} />
-      </Router>
-      <Footer/>
-    </div>
-  );
-}
-*/}
 export default App;
