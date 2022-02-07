@@ -34,8 +34,13 @@ user-select: none;
   }
 }
 
+.errors {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
 .Login {
-    width: 40%;
     margin: auto;
     background-color: #1D1F1C;
     color: #579E40;
@@ -61,7 +66,6 @@ user-select: none;
 }
 
 .Signup {
-    width: 40%;
     margin: auto;
     background-color: #1D1F1C;
     color: #579E40;
@@ -87,7 +91,6 @@ user-select: none;
 }
 
 .MessageForm {
-    width: 40%;
     margin: auto;
     background-color: #1D1F1C;
     color: #579E40;

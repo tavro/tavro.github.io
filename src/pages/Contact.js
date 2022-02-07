@@ -14,7 +14,8 @@ class Contact extends Component {
         super(props);
         this.state = {
             logged_in: localStorage.getItem('token') && localStorage.getItem('token') != "undefined"? true : false,
-            username: ""
+            username: "",
+            error: ""
         };
     }
 
@@ -46,6 +47,10 @@ class Contact extends Component {
                 logged_in: true,
                 username: json.username
             });
+        }).catch(err => {
+            this.setState(
+                {error: String(err)}
+            );
         });
     };
 
@@ -64,6 +69,7 @@ class Contact extends Component {
                 username: json.username
             });
         }).catch(err => {
+        this.state.error = err
         throw new Error(err)
         });
     };
@@ -94,12 +100,14 @@ class Contact extends Component {
             !this.state.username || this.state.username.includes("This field may not be blank.") || !this.state.logged_in ?
             <div>
                 <p>I'm currently rewriting this page from scratch, so the sign-in & up does not work at the moment.</p>
-                <LoginSignupForm handle_login={this.handle_login} handle_signup={this.handle_signup}/>
+                <LoginSignupForm handle_login={this.handle_login} handle_signup={this.handle_signup} error={this.state.error}/>
             </div>
             :
             <div>
                 <p>You are currently logged in as: <a>{this.state.username}</a></p>
                 <MessageForm from={this.state.username} handle_message={this.handle_message}/>
+                <h2>Sent messages:</h2>
+                <p>This functionality is currently not implemented.</p>
             </div>
             }
           </main>

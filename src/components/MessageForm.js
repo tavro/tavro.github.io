@@ -5,8 +5,8 @@ class MessageForm extends React.Component {
         super(props);
         this.state = {
           from_user: String(this.props.from),
-          subject: "Subject...",
-          message: "Enter message here..."
+          subject: "",
+          message: ""
         };
     }
 
@@ -24,13 +24,13 @@ class MessageForm extends React.Component {
     render() {
         return (
           <div className={`MessageForm`}>
-            <form onSubmit={e => this.props.handle_message(e, this.state)}>
+            <form id="msgForm" onSubmit={e => this.props.handle_message(e, this.state)}>
                 <h4>Send Message</h4>
                 <p>
-                <input type="text" name="subject" value={this.state.subject} onChange={this.handle_change}/>
+                <input type="text" name="subject" placeholder="Subject..." value={this.state.subject} onChange={this.handle_change}/>
                 </p>
                 <p>
-                <textarea resize = "none" rows = "5" cols = "30" name = "description"  name="message" value={this.state.message} onChange={this.handle_change}/>
+                <textarea resize = "none" rows = "5" cols = "30" name = "description"  name="message" placeholder="Message..." value={this.state.message} onChange={this.handle_change}/>
                 </p>
                 <p>
                 <input type="submit" id="submit" value="Send"/>

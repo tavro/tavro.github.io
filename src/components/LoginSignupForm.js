@@ -24,10 +24,10 @@ class LoginSignupForm extends React.Component {
             {
             this.state.login ?
             <div>
-                <LoginForm handle_login={this.props.handle_login} toggle={this.toggle_display} />
+                <LoginForm handle_login={this.props.handle_login} toggle={this.toggle_display} error={this.props.error}/>
             </div> :
             <div>
-                <SignupForm handle_signup={this.props.handle_signup} toggle={this.toggle_display}/>
+                <SignupForm handle_signup={this.props.handle_signup} toggle={this.toggle_display} error={this.props.error}/>
             </div>
             }
           </div>
