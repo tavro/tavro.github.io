@@ -36,25 +36,25 @@ class Header extends React.Component {
 		    	<h1 class="unselectable"> <big>\o/</big> > { this.state.word } <span class="blink">_</span> </h1>
 		        <ul class="tabs">
 		        		<Link to='/'>
-			        		<li class="nobullet"><a class={this.props.index === 0 ? "selected" : "tab"}>&nbsp;About </a></li>
+			        		<li class="nobullet"><span class={this.props.index === 0 ? "selected" : "tab"}>&nbsp;About </span></li>
 			        	</Link>
 			        	<Link to='/projects'>
-			        		<li class="nobullet"><a class={this.props.index === 1 ? "selected" : "tab"}>&nbsp;Projects </a></li>
+			        		<li class="nobullet"><span class={this.props.index === 1 ? "selected" : "tab"}>&nbsp;Projects </span></li>
 			        	</Link>
 			        	<Link to='/work'>
-			        		<li class="nobullet"><a class={this.props.index === 2 ? "selected" : "tab"}>&nbsp;Work </a></li>
+			        		<li class="nobullet"><span class={this.props.index === 2 ? "selected" : "tab"}>&nbsp;Work </span></li>
 			        	</Link>
 			        	<Link to='/school'>
-			        		<li class="nobullet"><a class={this.props.index === 3 ? "selected" : "tab"}>&nbsp;School </a></li>
+			        		<li class="nobullet"><span class={this.props.index === 3 ? "selected" : "tab"}>&nbsp;School </span></li>
 			         	</Link>
 			         	<Link to='/contact'>
-			         		<li class="nobullet"><a class={this.props.index === 4 ? "selected" : "tab"}>&nbsp;Contact&nbsp;</a></li>
+			         		<li class="nobullet"><span class={this.props.index === 4 ? "selected" : "tab"}>&nbsp;Contact&nbsp;</span></li>
 		    			</Link>
 		    			{
 		    			this.props.logged_in ?
 		    			<div>
 		    			    <Link to='/contact'>
-			         		    <li class="nobullet"><a class="tab" onClick={this.props.handle_logout}>&nbsp;Log out&nbsp;</a></li>
+			         		    <li class="nobullet"><span class="tab" onClick={this.props.handle_logout}>&nbsp;Log out&nbsp;</span></li>
 		    			    </Link>
 		    			</div> :
 		    			<div></div>

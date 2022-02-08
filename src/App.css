@@ -333,7 +333,7 @@ color: #473A43;
   margin-top: 0px;
 }
 
-.tabs li a.tab {
+.tabs li span.tab {
 font-size: 15px;
 color: #335B25;
 }

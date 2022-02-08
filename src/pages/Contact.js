@@ -121,7 +121,7 @@ class Contact extends Component {
             </div>
             :
             <div>
-                <p>You are currently logged in as: <p>{this.state.username}</p></p>
+                <p>You are currently logged in as: <span>{this.state.username}</span></p>
                 <MessageForm from={this.state.username} handle_message={this.handle_message}/>
                 <h2>Recieved messages:</h2>
                 {this.state.data && this.state.data.map(msg => (msg.to_user === this.state.username && (<Message subject={msg.subject} message={msg.message} to={msg.to_user}/>)))}
