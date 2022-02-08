@@ -2,13 +2,9 @@ import '../App.css';
 
 import Header from '../components/Header';
 
-import LoginForm from '../components/LoginForm';
-import SignupForm from '../components/SignupForm';
 import MessageForm from '../components/MessageForm';
 import LoginSignupForm from '../components/LoginSignupForm';
 import Message from '../components/Message';
-
-import useSWR from 'swr';
 
 import React, {Component} from 'react';
 
@@ -16,7 +12,7 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            logged_in: localStorage.getItem('token') && localStorage.getItem('token') != "undefined"? true : false,
+            logged_in: localStorage.getItem('token') && localStorage.getItem('token') !== "undefined"? true : false,
             username: "",
             data: "",
             error: ""
@@ -86,7 +82,7 @@ class Contact extends Component {
                 username: json.username
             });
         }).catch(err => {
-        this.state.error = err
+        this.setState({error: err});
         throw new Error(err)
         });
     };
@@ -125,12 +121,12 @@ class Contact extends Component {
             </div>
             :
             <div>
-                <p>You are currently logged in as: <a>{this.state.username}</a></p>
+                <p>You are currently logged in as: <p>{this.state.username}</p></p>
                 <MessageForm from={this.state.username} handle_message={this.handle_message}/>
                 <h2>Recieved messages:</h2>
-                {this.state.data && this.state.data.map(msg => (msg.to_user == this.state.username && (<Message subject={msg.subject} message={msg.message} to={msg.to_user}/>)))}
+                {this.state.data && this.state.data.map(msg => (msg.to_user === this.state.username && (<Message subject={msg.subject} message={msg.message} to={msg.to_user}/>)))}
                 <h2>Sent messages:</h2>
-                {this.state.data && this.state.data.map(msg => (msg.from_user == this.state.username && (<Message subject={msg.subject} message={msg.message} to={msg.to_user}/>)))}
+                {this.state.data && this.state.data.map(msg => (msg.from_user === this.state.username && (<Message subject={msg.subject} message={msg.message} to={msg.to_user}/>)))}
                 <br/><br/><br/>
             </div>
             }

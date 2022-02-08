@@ -82,7 +82,7 @@ input[type=button], input[type=submit], input[type=reset] {
   border: none;
   color: white;
   padding: 16px 32px;
-  width:100%;
+  width:90%;
   text-decoration: none;
   cursor: pointer;
   font-size:16px;
@@ -90,13 +90,13 @@ input[type=button], input[type=submit], input[type=reset] {
 
 input[type=text] {
   padding: 16px 32px;
-  width:90%;
+  width:80%;
   font-size:16px;
 }
 
 input[type=password] {
   padding: 16px 32px;
-  width:90%;
+  width:80%;
   font-size:16px;
 }
 
@@ -171,7 +171,7 @@ input[type=password]:focus {
 }
 
 .MessageForm textarea {
-  width: 100%;
+  width: 90%;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;

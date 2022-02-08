@@ -25,11 +25,11 @@ class LoginForm extends React.Component {
     empty() {
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
-        if (username == "" || password == "") {
-            this.state.error = "Username or password field is empty"
+        if (username === "" || password === "") {
+            this.setState({error: "Username or password field is empty"});
             return false;
         };
-        this.state.error = ""
+        this.setState({error: ""})
     }
 
     render() {
@@ -46,7 +46,7 @@ class LoginForm extends React.Component {
                 <p>
                 <input type="submit" id="submit" value="Login" onClick={this.empty}/>
                 </p>
-                <p id="no-acc">Don't have an account? <a onClick={this.props.toggle}>Sign Up</a></p>
+                <p id="no-acc">Don't have an account? <span onClick={this.props.toggle}>Sign Up</span></p>
 
                 {
                 this.props.error ?

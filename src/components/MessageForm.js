@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 class MessageForm extends React.Component {
 	constructor(props) {
@@ -30,7 +30,7 @@ class MessageForm extends React.Component {
                 <input type="text" name="subject" placeholder="Subject..." value={this.state.subject} onChange={this.handle_change}/>
                 </p>
                 <p>
-                <textarea resize = "none" rows = "5" cols = "30" name = "description"  name="message" placeholder="Message..." value={this.state.message} onChange={this.handle_change}/>
+                <textarea resize = "none" rows = "5" cols = "30" name="message" placeholder="Message..." value={this.state.message} onChange={this.handle_change}/>
                 </p>
                 <p>
                 <input type="submit" id="submit" value="Send"/>

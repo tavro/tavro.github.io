@@ -1,15 +1,18 @@
 import React from 'react';
 
+import {
+  Link,
+} from "react-router-dom";
+
 class Preview extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return ( 
         <div className={`Preview`}>
 	    <p>{this.props.title}</p>
-	    <img src={this.props.img}/>
-	    <p>See more</p>
+	    <img alt="preview" src={this.props.img}/>
+        <Link to={this.props.url}>
+	       <p>See more</p>
+        </Link>
         </div>
         )
     }

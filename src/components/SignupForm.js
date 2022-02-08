@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 class SignupForm extends React.Component {
 	constructor(props) {
@@ -25,11 +25,11 @@ class SignupForm extends React.Component {
     empty() {
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
-        if (username == "" || password == "") {
-            this.state.error = "Username or password field is empty"
+        if (username === "" || password === "") {
+            this.setState({error: "Username or password field is empty"});
             return false;
         };
-        this.state.error = ""
+        this.setState({error: ""})
     }
 
     render() {
@@ -46,7 +46,7 @@ class SignupForm extends React.Component {
                 <p>
                 <input type="submit" id="submit" value="Signup" onClick={this.empty}/>
                 </p>
-                <p id="no-acc">Already have an account? <a onClick={this.props.toggle}>Login</a></p>
+                <p id="no-acc">Already have an account? <span onClick={this.props.toggle}>Login</span></p>
 
                 {
                 this.props.error ?

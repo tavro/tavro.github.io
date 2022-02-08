@@ -12,7 +12,7 @@ class About extends React.Component {
 	      <main>
 	        <h2>About Me</h2>
 	        <p>I'm a student from Sweden currently studying Computer Science and Software Engineering at Linköping University</p>
-	        <img src={'/profile.jpg'} class="nondragable"/>
+	        <img alt="profile" src={'/profile.jpg'} class="nondragable"/>
 	        <p class="caption">Me hanging out with the Idégran</p>
 		  <div className="Tags">
 		      <h2>Programming Languages I Know</h2>
