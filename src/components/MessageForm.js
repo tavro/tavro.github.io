@@ -26,6 +26,8 @@ class MessageForm extends React.Component {
           <div className={`MessageForm`}>
             <form id="msgForm" onSubmit={e => this.props.handle_message(e, this.state)}>
                 <h4>Send Message</h4>
+
+                <div class="input-width">
                 <p>
                 <input type="text" name="subject" placeholder="Subject..." value={this.state.subject} onChange={this.handle_change}/>
                 </p>
@@ -35,6 +37,8 @@ class MessageForm extends React.Component {
                 <p>
                 <input type="submit" id="submit" value="Send"/>
                 </p>
+                </div>
+
             </form>
           </div>
         )

@@ -37,16 +37,19 @@ class LoginForm extends React.Component {
           <div className={`Login`}>
             <form onSubmit={e => this.props.handle_login(e, this.state)}>
                 <h4>Login</h4>
-                <p>
-                <input id="username" placeholder="username" type="text" name="username" value={this.state.username} onChange={this.handle_change}/>
-                </p>
-                <p>
-                <input id="password" placeholder="password" type="password" name="password" value={this.state.password} onChange={this.handle_change}/>
-                </p>
-                <p>
-                <input type="submit" id="submit" value="Login" onClick={this.empty}/>
-                </p>
-                <p id="no-acc">Don't have an account? <span onClick={this.props.toggle}>Sign Up</span></p>
+
+                <div class="input-width">
+                    <p>
+                    <input id="username" placeholder="username" type="text" name="username" value={this.state.username} onChange={this.handle_change}/>
+                    </p>
+                    <p>
+                    <input id="password" placeholder="password" type="password" name="password" value={this.state.password} onChange={this.handle_change}/>
+                    </p>
+                    <p>
+                    <input type="submit" id="submit" value="Login" onClick={this.empty}/>
+                    </p>
+                </div>
+                <p id="no-acc">Don't have an account? <span class="fake-button" onClick={this.props.toggle}>Sign Up</span></p>
 
                 {
                 this.props.error ?

@@ -37,6 +37,8 @@ class SignupForm extends React.Component {
           <div className={`Signup`}>
             <form onSubmit={e => this.props.handle_signup(e, this.state)}>
                 <h4>Sign up</h4>
+
+                <div class="input-width">
                 <p>
                 <input id="username" placeholder="username" type="text" name="username" value={this.state.username} onChange={this.handle_change}/>
                 </p>
@@ -46,7 +48,9 @@ class SignupForm extends React.Component {
                 <p>
                 <input type="submit" id="submit" value="Signup" onClick={this.empty}/>
                 </p>
-                <p id="no-acc">Already have an account? <span onClick={this.props.toggle}>Login</span></p>
+                </div>
+
+                <p id="no-acc">Already have an account? <span class="fake-button" onClick={this.props.toggle}>Login</span></p>
 
                 {
                 this.props.error ?

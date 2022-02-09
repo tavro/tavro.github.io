@@ -11,7 +11,7 @@ function Websites() {
           <Preview url='/cofflang' title={'cofflang'} img={'/games/Coff.png'}/>
           <Preview url='/staben' title={'staben.info'} img={'/games/STABEN.png'}/>
           <Preview url='/dsektionen' title={'d-sektionen.se'} img={'/games/Data.png'}/>
-          <Preview url='/' title={'isakhorvath.me'} img={'/games/Tavro.png'}/>
+          <Preview url='/this' title={'isakhorvath.me'} img={'/games/Tavro.png'}/>
       </main>
     </div>
   );
