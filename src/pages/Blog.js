@@ -55,7 +55,7 @@ class Blog extends React.Component {
 	        {
 	        this.state.logged_in && (<p>You are currently logged in as: <p class="caption">{this.state.username}</p></p>)
 	        }
-	        {this.state.data && this.state.data.map(post => <BlogPost title={post.title} body={post.body} logged_in={this.state.logged_in}/>)}
+	        {this.state.data && this.state.data.map(post => <BlogPost user={this.state.username} post_id={post.id} title={post.title} body={post.body} logged_in={this.state.logged_in}/>)}
 	      </main>
 	    </div>
         )

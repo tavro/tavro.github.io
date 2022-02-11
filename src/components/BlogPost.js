@@ -3,6 +3,52 @@ import { AiOutlineLike, AiFillLike, AiOutlineDislike, AiFillDislike, AiOutlineCo
 import Comment from './Comment';
 
 class BlogPost extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: "",
+            post_id: this.props.post_id,
+            username: this.props.user,
+        };
+    }
+
+    componentDidMount() {
+        fetch("https://isakhorvath-backend.herokuapp.com/comments/", {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(res => res.json()).then(json => {
+            this.setState({
+                data: json,
+            });
+        }).catch(err => {
+        throw new Error(err)
+        });
+    }
+
+    handle_change = e => {
+        const name = e.target.name;
+        const value = e.target.value;
+
+        this.setState(prevstate => {
+            const newstate = { ...prevstate };
+            newstate[name] = value;
+            return newstate;
+        });
+    };
+
+    handle_comment = (e, data) => {
+        e.preventDefault();
+        fetch("https://isakhorvath-backend.herokuapp.com/comments/", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+    };
+
     render() {
         return (
         <div className={`BlogPost`}>
@@ -43,14 +89,13 @@ class BlogPost extends React.Component {
             </div>
 	    </div>
 	    <div class="comments">
-            <Comment user="isakhorvath" text="first"/>
-            <Comment user="lolle" text="second"/>
+	        {this.state.data && this.state.data.map(comment => comment.post_id === this.props.post_id && (<Comment user={comment.username} text={comment.body}/>))}
 	    </div>
 	    {
 	    this.props.logged_in ?
-	    <form>
+	    <form onSubmit={e => this.handle_comment(e, this.state)}>
             <div class="comment-field">
-                <input id="commentfield" placeholder="comment..." type="text" name="commentfield"/>
+                <input id="commentfield" placeholder="comment..." type="text" name="body" onChange={this.handle_change}/>
                 <input type="submit" id="commentsubmit" value="Comment"/>
             </div>
 	    </form>
