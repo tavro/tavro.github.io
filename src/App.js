@@ -13,6 +13,7 @@ import Music from './pages/Project/Music';
 import Websites from './pages/Project/Websites';
 import ProjectTemplate from './pages/ProjectTemplate';
 import Blog from './pages/Blog';
+import Profile from './pages/Profile';
 
 import {
   HashRouter as Router,
@@ -39,6 +40,7 @@ class App extends Component {
             <Route path="/music" component={Music} />
             <Route path="/websites" component={Websites} />
             <Route path="/blog" component={Blog} />
+            <Route path="/profile" component={Profile} />
 
             <Route path="/retrocolors">
                 <ProjectTemplate content="This game actually won a prize!" header="Retro Colors"/>

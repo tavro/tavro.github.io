@@ -362,6 +362,7 @@ color: #473A43;
 .tabs {
   padding-top: 0px;
   margin-top: 0px;
+  margin-left: 16px;
 }
 
 .tabs li span.tab {
@@ -379,9 +380,82 @@ display: inline;
 list-style-type: none;
 }
 
+
+
+.logout {
+    font-size: 15px;
+    color: #335B25;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #473A43;
+}
+
+.logout:hover {
+    text-decoration-color: #637F5A;
+}
+
 .selected{
 font-weight: bold;
 font-size: 15px;
 color: #579E40;
 text-decoration: underline;
 }
+
+.Comment {
+    padding-bottom: 4px;
+}
+
+.content-body {
+    background-color: #EAE8DC;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-left: 6px solid #AFAC9B;
+}
+
+.Comment p.user {
+    color: #579E40;
+    font-weight:bold;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    text-decoration-line: underline;
+}
+
+.Comment p.text {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 14px;
+    color: #473A43;
+}
+
+.comment-field {
+    width:100%;
+    margin:auto;
+}
+
+
+.comment-field input[type=text] {
+  width: 75%;
+}
+
+.comment-field input[type=text]:focus {
+  border: none;
+  outline:none;
+}
+
+.comment-field input[type=submit] {
+  width: 25%;
+}
+
+.post-button {
+    text-align: center;
+    cursor: pointer;
+    width:48px;
+    height: 32px;
+    float: left;
+}
+
+.post-buttons {
+    padding-bottom:32px;
+}
+
