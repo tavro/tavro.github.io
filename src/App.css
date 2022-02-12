@@ -6,6 +6,10 @@
   background-color: #AFAC9B;
 }
 
+.hidden {
+    display: none;
+}
+
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -228,8 +232,13 @@ input[type=password]:focus {
     height: auto;
 }
 
+.Blog main {
+    height: auto;
+    margin-bottom: 64px;
+}
+
 .Preview {
-  width:22%;
+  width:24%;
   background-color: #1D1F1C;
   border-radius: 4px;
   text-align: center;
@@ -243,7 +252,9 @@ input[type=password]:focus {
 .Preview p {
   margin-bottom: 0px;
   margin-top: 0px;
-  font-size: 16px;
+  word-break: break-all;
+  white-space: normal;
+  font-size: 14px;
 }
 
 .Tags {
@@ -269,9 +280,9 @@ h2 {
   clear:both;
 }
 
-.School {
-  margin-bottom: 32px;
-  height: 2200px;
+.School main {
+  margin-bottom: 128px;
+  height: auto;
 }
 
 .School img {
@@ -363,6 +374,7 @@ color: #473A43;
   padding-top: 0px;
   margin-top: 0px;
   margin-left: 16px;
+  margin-right: 16px;
 }
 
 .tabs li span.tab {
@@ -444,6 +456,27 @@ text-decoration: underline;
 }
 
 .comment-field input[type=submit] {
+  width: 25%;
+}
+
+.respond-field {
+    outline: 2px solid black;
+    box-shadow: 0 0 4px #473A43;
+    border-radius: 4px;
+    width:75%;
+}
+
+
+.respond-field input[type=text] {
+  width: 75%;
+}
+
+.respond-field input[type=text]:focus {
+  border: none;
+  outline:none;
+}
+
+.respond-field input[type=submit] {
   width: 25%;
 }
 

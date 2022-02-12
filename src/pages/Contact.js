@@ -80,8 +80,12 @@ class Contact extends Component {
             <div>
                 <p>You are currently logged in as: <p class="caption">{this.state.username}</p></p>
                 <MessageForm from={this.state.username} handle_message={this.handle_message}/>
-                <h2>Recieved messages:</h2>
-                {this.state.data && this.state.data.map(msg => (msg.to_user === this.state.username && (<Message subject={msg.subject} message={msg.message} to={msg.to_user}/>)))}
+                {this.state.data && this.state.data.map(msg => (this.state.username === "isakhorvath" && msg.to_user === this.state.username && (<div><Message subject={msg.subject} message={msg.message} to={msg.to_user}/>
+                <div class="respond-field">
+                    <input id="respondfield" placeholder="response..." type="text" name="body"/>
+                    <input type="submit" id="respondsubmit" value="Respond"/>
+                </div>
+                </div>)))}
                 <h2>Sent messages:</h2>
                 {this.state.data && this.state.data.map(msg => (msg.from_user === this.state.username && (<Message subject={msg.subject} message={msg.message} to={msg.to_user}/>)))}
                 <br/><br/><br/>

@@ -9,7 +9,9 @@ class BlogPost extends React.Component {
             data: "",
             post_id: this.props.post_id,
             username: this.props.user,
+            amount: 0
         };
+
     }
 
     componentDidMount() {
@@ -81,15 +83,12 @@ class BlogPost extends React.Component {
             </div>
             <div class="post-button">
                 <AiOutlineComment/>
-                {
-                this.props.comments ?
-                <span>{this.props.comments}</span> :
-                <span>0</span>
-                }
+                {this.state.data && this.state.data.map(comment => comment.post_id === this.props.post_id && <span className="hidden">{this.state.amount++}</span>)}
+                <span>{this.state.amount}</span>
             </div>
 	    </div>
 	    <div class="comments">
-	        {this.state.data && this.state.data.map(comment => comment.post_id === this.props.post_id && (<Comment user={comment.username} text={comment.body}/>))}
+	        {this.state.data && this.state.data.map(comment => comment.post_id === this.props.post_id && (<span><Comment user={comment.username} text={comment.body}/></span>))}
 	    </div>
 	    {
 	    this.props.logged_in ?
