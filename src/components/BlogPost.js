@@ -41,6 +41,7 @@ class BlogPost extends React.Component {
     };
 
     handle_comment = (e, data) => {
+        this.setState({username: this.props.user});
         e.preventDefault();
         fetch("https://isakhorvath-backend.herokuapp.com/comments/", {
             method: 'POST',

@@ -466,6 +466,11 @@ text-decoration: underline;
     width:75%;
 }
 
+.paper {
+    background-color: white;
+    margin: 16px;
+    padding: 16px;
+}
 
 .respond-field input[type=text] {
   width: 75%;

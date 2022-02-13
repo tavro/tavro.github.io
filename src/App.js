@@ -12,8 +12,18 @@ import Programs from './pages/Project/Programs';
 import Music from './pages/Project/Music';
 import Websites from './pages/Project/Websites';
 import ProjectTemplate from './pages/ProjectTemplate';
+import Rewind from './pages/Rewind';
 import Blog from './pages/Blog';
 import Profile from './pages/Profile';
+
+import BeautyInTheMess from './pages/Project/Songs/BeautyInTheMess';
+import GoldenDaffodil from './pages/Project/Songs/GoldenDaffodil';
+import GoNowhere from './pages/Project/Songs/GoNowhere';
+import InLoveIndeed from './pages/Project/Songs/InLoveIndeed';
+import LateJuly from './pages/Project/Songs/LateJuly';
+import RewindSong from './pages/Project/Songs/Rewind';
+import SafeWithMe from './pages/Project/Songs/SafeWithMe';
+import UpwindRowing from './pages/Project/Songs/UpwindRowing';
 
 import {
   HashRouter as Router,
@@ -75,7 +85,7 @@ class App extends Component {
             </Route>
 
             <Route path="/rewind">
-                <ProjectTemplate content="I said baby, baby, baby, ohhhhh" header="Rewind"/>
+                <Rewind songtitle="Golden Daffodil" songtext="blah blah blah" content="I said baby, baby, baby, ohhhhh" header="Rewind" description="Rewind is my debut album consisting out of eight songs."/>
             </Route>
 
             <Route path="/donsole">
@@ -93,6 +103,15 @@ class App extends Component {
             <Route path="/scraper">
                 <ProjectTemplate content="Don't use prnt.sc" header="Scraper"/>
             </Route>
+
+            <Route path="/goldendaffodil" component={GoldenDaffodil} />
+            <Route path="/safewithme" component={SafeWithMe} />
+            <Route path="/gonowhere" component={GoNowhere} />
+            <Route path="/beautyinthemess" component={BeautyInTheMess} />
+            <Route path="/upwindrowing" component={UpwindRowing} />
+            <Route path="/rewindsong" component={RewindSong} />
+            <Route path="/latejuly" component={LateJuly} />
+            <Route path="/inloveindeed" component={InLoveIndeed} />
           </Router>
           <Footer/>
         </div>
