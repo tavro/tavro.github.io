@@ -9,7 +9,8 @@ class BlogPost extends React.Component {
             data: "",
             post_id: this.props.post_id,
             username: this.props.user,
-            amount: 0
+            amount: 0,
+            likes: 0
         };
 
     }
@@ -23,6 +24,19 @@ class BlogPost extends React.Component {
         }).then(res => res.json()).then(json => {
             this.setState({
                 data: json,
+            });
+        }).catch(err => {
+        throw new Error(err)
+        });
+
+        fetch("https://isakhorvath-backend.herokuapp.com/like/", {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(res => res.json()).then(json => {
+            this.setState({
+                likes: json.likes,
             });
         }).catch(err => {
         throw new Error(err)
@@ -52,24 +66,34 @@ class BlogPost extends React.Component {
         });
     };
 
+    handle_like = (e) => {
+        e.preventDefault();
+        fetch("https://isakhorvath-backend.herokuapp.com/like/", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username: this.props.user, blogpost_id: this.props.post_id})
+        });
+    };
+
     render() {
         return (
         <div className={`BlogPost`}>
 	    <h2>{this.props.title}</h2>
 	    <p>{this.props.body}</p>
 	    <div class="post-buttons">
-            <div class="post-button">
+            <div class="post-button" onClick={e => this.handle_like(e)}>
                 {
                 this.props.liked ?
                 <AiFillLike/> :
                 <AiOutlineLike/>
                 }
                 {
-                this.props.likes ?
-                <span>{this.props.likes}</span> :
-                <span>0</span>
+                <span>{this.state.likes}</span>
                 }
             </div>
+            {/*
             <div class="post-button">
                 {
                 this.props.liked ?
@@ -82,6 +106,7 @@ class BlogPost extends React.Component {
                 <span>0</span>
                 }
             </div>
+            */}
             <div class="post-button">
                 <AiOutlineComment/>
                 {this.state.data && this.state.data.map(comment => comment.post_id === this.props.post_id && <span className="hidden">{this.state.amount++}</span>)}
