@@ -55,14 +55,14 @@ class Header extends React.Component {
 		    			</Link>
                         {this.props.index > 3 && (
 		    			this.props.logged_in ?
-		    			<div>
+		    			<span>
 			         		    <li class="nobullet"><span class="logout" onClick={this.props.handle_logout}>&nbsp;Log out&nbsp;</span></li>
-		    			</div> :
-		    			<div>
+		    			</span> :
+		    			<span>
                             <Link to='/profile'>
                                 <li class="nobullet"><span class={this.props.index === 6 ? "selected" : "tab"}>&nbsp;Login&nbsp;</span></li>
                             </Link>
-		    			</div>
+		    			</span>
 		    			)}
 		    	</ul>
 		  	</header>

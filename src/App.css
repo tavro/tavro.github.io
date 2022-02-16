@@ -111,6 +111,7 @@ input[type=button], input[type=submit], input[type=reset] {
   color: white;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-right: 0px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -202,6 +203,7 @@ input[type=password]:focus {
 
 .MessageForm textarea {
   width: 95%;
+  padding-left: 2%;
   box-sizing: border-box;
   background-color: #f8f8f8;
   resize: none;
@@ -219,8 +221,9 @@ input[type=password]:focus {
 }
 
 .input-width input {
-    width:95%;
+    width:93%;
     font-size:16px;
+    padding-left:2%;
     font-family: consolas;
 }
 
@@ -441,13 +444,14 @@ text-decoration: underline;
 }
 
 .comment-field {
-    width:100%;
-    margin:auto;
+    margin-left:4px;
+    margin-right: 4px;
+    padding-bottom: 4px;
 }
 
-
 .comment-field input[type=text] {
-  width: 75%;
+  width: 73%;
+  padding-left: 2%;
 }
 
 .comment-field input[type=text]:focus {
@@ -473,7 +477,8 @@ text-decoration: underline;
 }
 
 .respond-field input[type=text] {
-  width: 75%;
+  width: 73%;
+  padding-left: 2%;
 }
 
 .respond-field input[type=text]:focus {

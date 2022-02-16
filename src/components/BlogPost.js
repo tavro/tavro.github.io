@@ -9,8 +9,9 @@ class BlogPost extends React.Component {
             data: "",
             post_id: this.props.post_id,
             username: this.props.user,
-            amount: 0,
-            likes: 0
+            has_liked: false,
+            likes: 0,
+            comments: 0
         };
 
     }
@@ -29,7 +30,7 @@ class BlogPost extends React.Component {
         throw new Error(err)
         });
 
-        fetch("https://isakhorvath-backend.herokuapp.com/like/", {
+        fetch("https://isakhorvath-backend.herokuapp.com/like/" + this.state.post_id, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -37,6 +38,19 @@ class BlogPost extends React.Component {
         }).then(res => res.json()).then(json => {
             this.setState({
                 likes: json.likes,
+            });
+        }).catch(err => {
+        throw new Error(err)
+        });
+
+        fetch("https://isakhorvath-backend.herokuapp.com/comments/" + this.state.post_id, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(res => res.json()).then(json => {
+            this.setState({
+                comments: json.comments,
             });
         }).catch(err => {
         throw new Error(err)
@@ -75,6 +89,7 @@ class BlogPost extends React.Component {
             },
             body: JSON.stringify({ username: this.props.user, blogpost_id: this.props.post_id})
         });
+        this.setState({has_liked: !this.state.has_liked});
     };
 
     render() {
@@ -85,7 +100,7 @@ class BlogPost extends React.Component {
 	    <div class="post-buttons">
             <div class="post-button" onClick={e => this.handle_like(e)}>
                 {
-                this.props.liked ?
+                this.state.has_liked ?
                 <AiFillLike/> :
                 <AiOutlineLike/>
                 }
@@ -109,8 +124,7 @@ class BlogPost extends React.Component {
             */}
             <div class="post-button">
                 <AiOutlineComment/>
-                {this.state.data && this.state.data.map(comment => comment.post_id === this.props.post_id && <span className="hidden">{this.state.amount++}</span>)}
-                <span>{this.state.amount}</span>
+                <span>{this.state.comments}</span>
             </div>
 	    </div>
 	    <div class="comments">
