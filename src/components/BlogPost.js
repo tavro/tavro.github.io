@@ -11,6 +11,7 @@ class BlogPost extends React.Component {
             username: this.props.user,
             has_liked: false,
             likes: 0,
+            liked_by: [],
             comments: 0
         };
 
@@ -38,6 +39,7 @@ class BlogPost extends React.Component {
         }).then(res => res.json()).then(json => {
             this.setState({
                 likes: json.likes,
+                liked_by: json.liked_by
             });
         }).catch(err => {
         throw new Error(err)
@@ -100,7 +102,7 @@ class BlogPost extends React.Component {
 	    <div class="post-buttons">
             <div class="post-button" onClick={e => this.handle_like(e)}>
                 {
-                this.state.has_liked ?
+                this.state.liked_by.some(row => row.includes(this.state.username)) ?
                 <AiFillLike/> :
                 <AiOutlineLike/>
                 }
