@@ -99,6 +99,7 @@ class BlogPost extends React.Component {
         <div className={`BlogPost`}>
 	    <h2>{this.props.title}</h2>
 	    <p>{this.props.body}</p>
+
 	    <div class="post-buttons">
             <div class="post-button" onClick={e => this.handle_like(e)}>
                 {
