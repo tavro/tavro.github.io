@@ -7,7 +7,13 @@ function Work() {
       <main>
         <h2>Work</h2>
         <li>
+            <b>Opera</b>
+            <ul>2022 | Student Ambassador</ul>
+            <ul>2022 | Summer Intern</ul>
+        </li>
+        <li>
             <b>Laboratory Assistant @ Linköping University</b>
+            <ul>2022 | TDDI16, Datastructures & Algorithms</ul>
             <ul>2022 | TDDD78, OO-programming & Java</ul>
             <ul>2021 | TDDE24, Functional & Imperative programming</ul>
             <ul>2021 | TDDE23, Functional & Imperative programming</ul>
@@ -19,6 +25,7 @@ function Work() {
         </li>
         <li>
             <b>Datateknologsektionen</b>
+            <ul>2022 | Webmaster @ WebbU</ul>
             <ul>2021 | Webmaster @ WebbU</ul>
             <ul>2021 | Web & Info @ STABEN</ul>
         </li>
