@@ -47,23 +47,6 @@ class Header extends React.Component {
 			        	<Link to='/school'>
 			        		<li class="nobullet"><span class={this.props.index === 3 ? "selected" : "tab"}>&nbsp;School </span></li>
 			         	</Link>
-			         	<Link to='/contact'>
-			         		<li class="nobullet"><span class={this.props.index === 4 ? "selected" : "tab"}>&nbsp;Contact&nbsp;</span></li>
-		    			</Link>
-		    			<Link to='/blog'>
-			         		<li class="nobullet"><span class={this.props.index === 5 ? "selected" : "tab"}>&nbsp;Blog&nbsp;</span></li>
-		    			</Link>
-                        {this.props.index > 3 && (
-		    			this.props.logged_in ?
-		    			<span>
-			         		    <li class="nobullet"><span class="logout" onClick={this.props.handle_logout}>&nbsp;Log out&nbsp;</span></li>
-		    			</span> :
-		    			<span>
-                            <Link to='/profile'>
-                                <li class="nobullet"><span class={this.props.index === 6 ? "selected" : "tab"}>&nbsp;Login&nbsp;</span></li>
-                            </Link>
-		    			</span>
-		    			)}
 		    	</ul>
 		  	</header>
           </div>

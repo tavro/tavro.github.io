@@ -1,7 +1,10 @@
 import './App.css';
 
-import Footer from './components/Footer';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
+import Profile from './pages/Profile';
+
+import Footer from './components/Footer';
 import School from './pages/School';
 import Work from './pages/Work';
 import Projects from './pages/Projects';
@@ -13,8 +16,6 @@ import Music from './pages/Project/Music';
 import Websites from './pages/Project/Websites';
 import ProjectTemplate from './pages/ProjectTemplate';
 import Rewind from './pages/Rewind';
-import Blog from './pages/Blog';
-import Profile from './pages/Profile';
 
 import BeautyInTheMess from './pages/Project/Songs/BeautyInTheMess';
 import GoldenDaffodil from './pages/Project/Songs/GoldenDaffodil';
@@ -43,14 +44,11 @@ class App extends Component {
             <Route path="/projects" component={Projects} />
             <Route path="/work" component={Work} />
             <Route path="/school" component={School} />
-            <Route path="/contact" component={Contact} />
 
             <Route path="/games" component={Games} />
             <Route path="/programs" component={Programs} />
             <Route path="/music" component={Music} />
             <Route path="/websites" component={Websites} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/profile" component={Profile} />
 
             <Route path="/retrocolors">
                 <ProjectTemplate content="This game actually won a prize!" header="Retro Colors"/>
