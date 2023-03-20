@@ -11,7 +11,6 @@ function Projects() {
           <Preview url='/games' title={'Games'} img={'/games/Games.png'}/>
           <Preview url='/websites' title={'Websites'} img={'/games/Websites.png'}/>
           <Preview url='/programs' title={'Programs'} img={'/games/Programs.png'}/>
-          {/*<Preview url='/music' title={'Music'} img={'/games/Music.png'}/>*/}
       </main>
     </div>
   );

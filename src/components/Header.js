@@ -33,20 +33,23 @@ class Header extends React.Component {
         return ( 
           <div className={`Header`}>
           	<header>
-		    	<h1 class="unselectable"> <big>\o/</big> > { this.state.word } <span class="blink">_</span> </h1>
-		        <ul class="tabs">
+		    	<h1 className="unselectable"> <big>\o/</big> > { this.state.word } <span className="blink">_</span> </h1>
+		        <ul className="tabs">
 		        		<Link to='/'>
-			        		<li class="nobullet"><span class={this.props.index === 0 ? "selected" : "tab"}>&nbsp;About </span></li>
+			        		<li className="nobullet"><span className={this.props.index === 0 ? "selected" : "tab"}>&nbsp;About </span></li>
 			        	</Link>
 			        	<Link to='/projects'>
-			        		<li class="nobullet"><span class={this.props.index === 1 ? "selected" : "tab"}>&nbsp;Projects </span></li>
+			        		<li className="nobullet"><span className={this.props.index === 1 ? "selected" : "tab"}>&nbsp;Projects </span></li>
 			        	</Link>
-			        	<Link to='/work'>
-			        		<li class="nobullet"><span class={this.props.index === 2 ? "selected" : "tab"}>&nbsp;Work </span></li>
-			        	</Link>
+                        <a href='https://www.isakhorvath.me/digital-cv'>
+                            <li className="nobullet"><span className="tab">&nbsp;Work </span></li>
+                        </a>
 			        	<Link to='/school'>
-			        		<li class="nobullet"><span class={this.props.index === 3 ? "selected" : "tab"}>&nbsp;School </span></li>
+			        		<li className="nobullet"><span className={this.props.index === 3 ? "selected" : "tab"}>&nbsp;School </span></li>
 			         	</Link>
+                        <a href='https://www.isakhorvath.me/tavro-blog-svelte'>
+                            <li className="nobullet"><span className="tab">&nbsp;Blog </span></li>
+                        </a>
 		    	</ul>
 		  	</header>
           </div>

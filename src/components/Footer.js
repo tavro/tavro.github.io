@@ -4,9 +4,9 @@ class Footer extends React.Component {
     render() {
         return ( 
           <div className={`Footer`}>
-	      	<footer>
-				<p>2022 © Isak Horvath</p>
-		    </footer>
+	      	  <footer>
+				      <p>{new Date().getFullYear()} © Isak Horvath</p>
+		        </footer>
           </div>
         )
     }
