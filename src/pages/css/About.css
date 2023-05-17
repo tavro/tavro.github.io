@@ -1,0 +1,101 @@
+.App-about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.App-about-icons {
+    border: 1px solid rgb(251, 250, 244, 0.1);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.App-about {
+    margin: 8px;
+    color: rgb(251, 250, 244);
+    border-radius: 8px;
+}
+
+.App-about-meta {
+    margin: 8px;
+    color: rgb(251, 250, 244);
+    border-radius: 8px;
+}
+
+.Icon {
+    font-size: 32px;
+    transition: 0.3s;
+    color: rgb(251, 250, 244, 0.3);
+    padding: 8px;
+}
+
+.Icon:hover {
+    font-size: 32px;
+    color:rgb(251, 250, 244);
+}
+
+.App-about-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.App-about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.App-about-me img {
+    border-radius: 8px;
+    width: 256px;
+}
+
+.App-about-img {
+    width: 30%;
+}
+
+.App-about-question {
+    color: rgb(251, 250, 244);
+    text-align: left;
+    width: 70%;
+}
+
+.App-about-question p, .App-about-img p {
+    color: rgb(251, 250, 244, 0.7);
+    font-size: 18px;
+}
+
+.App-about-main {
+    display: flex;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+hr {
+    color: rgb(251, 250, 244);
+}
+
+.App-about h2 {
+    color: rgb(251, 250, 244, 0.7);
+}
+
+@media (max-width: 1280px) {
+    .App-about-me {
+        flex-direction: column;
+    }
+
+    .App-about-img {
+        width: 100%;
+    }
+
+    .App-about-question {
+        width: 100%;
+    }
+
+    .App-about-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
