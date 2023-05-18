@@ -25,22 +25,10 @@ function Blog() {
 
   const blogPosts = [
     {
-        title: "test post",
-        timestamp: "2023-05-18 12:58",
-        category: "computer science",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        title: "another test post",
-        timestamp: "2023-05-18 13:04",
-        category: "programming",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        title: "yet another test post",
-        timestamp: "2023-05-18 13:15",
-        category: "thoughts",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        title: "my first blog post (again)",
+        timestamp: "2023-05-18 20:39",
+        category: "general",
+        content: "i'm thrilled to share my very first blog post... again! previously, my blog was built using Svelte, a fantastic framework that served me well. however, as i built my new website, i wanted to unify the technologies and have everything in one place. that's when the idea of migrating my blog to React sparked! stay tuned for more engaging content and updates as my blog continues to evolve."
     }
   ]
 
