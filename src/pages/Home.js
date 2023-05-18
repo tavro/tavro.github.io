@@ -29,15 +29,14 @@ function Home() {
           <a id="App-nav-selected">> home</a>
         </div>
         <div className='App-nav-wrapper'>
-          <a href="https://isakhorvath.me/digital-cv/" className="App-link">work</a>
-        </div>
-        <div className='App-nav-wrapper'>
           <Link to="/about" className="App-link">
             about
           </Link>
         </div>
         <div className='App-nav-wrapper'>
-          <a href="https://isakhorvath.me/tavro-blog-svelte/" className="App-link">blog</a>
+          <Link to="/blog" className="App-link">
+            blog
+          </Link>
         </div>
       </header>
       <main className='App-main'>
@@ -51,9 +50,9 @@ function Home() {
               <p className='App-desc'>i am a 23 year-old software developer from sweden</p>
             </div>
             <div className='App-button-wrapper'>
-              <a href="#" className='App-button-link'>
+              <a href="https://isakhorvath.me/digital-cv/" className='App-button-link'>
                 <div className='App-button'>
-                  <p className='App-button-text'>my portfolio</p>
+                  <p className='App-button-text'>my digital cv</p>
                 </div>
               </a>
               <a href='https://github.com/tavro' className='App-button-link'>

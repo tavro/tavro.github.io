@@ -55,7 +55,7 @@
 }
 
 .App-about-question {
-    color: rgb(251, 250, 244);
+    color: rgb(87, 158, 64);
     text-align: left;
     width: 70%;
 }
@@ -99,3 +99,4 @@ hr {
         flex-direction: column;
     }
 }
+

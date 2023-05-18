@@ -1,0 +1,46 @@
+.App-post-preview {
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.App-post-title {
+    color: rgb(251, 250, 244);
+    padding: 0;
+    margin: 16px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.App-post-decorator {
+    color: rgb(251, 250, 244);
+}
+
+.App-post-content {
+    color: rgb(251, 250, 244, 0.7);
+    font-size: 18px;
+    text-align: left;
+    padding: 8px;
+}
+
+.App-post-date {
+    color: rgb(251, 250, 244, 0.3);
+    float: left;
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+    text-align: left;
+    padding-left:8px;
+}
+
+.App-post-category {
+    color: rgb(251, 250, 244, 0.3);
+    float: right;
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 8px;
+}

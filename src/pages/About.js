@@ -7,11 +7,27 @@ import profile from '../profile.jpg';
 
 import './css/About.css';
 
+import React, { useState, useEffect } from 'react';
+
 import {
     Link
   } from "react-router-dom";
 
 function About() {
+  const [word, setWord] = useState("")
+
+  useEffect(() => {
+    printWord("get to know me", 100)
+  }, [])
+
+  const delay = ms => new Promise(res => setTimeout(res, ms));
+  const printWord = async (word, time) => {
+    for (let i = 0; i < word.length+1; i++) {
+        await delay(time)
+        setWord(word.substring(0, i))
+    }
+  }
+
   return (
     <div className="App">
       <header className='App-header'>
@@ -21,13 +37,12 @@ function About() {
           </Link>
         </div>
         <div className='App-nav-wrapper'>
-          <a href="https://isakhorvath.me/digital-cv/" className="App-link">work</a>
-        </div>
-        <div className='App-nav-wrapper'>
           <a id="App-nav-selected">> about</a>
         </div>
         <div className='App-nav-wrapper'>
-          <a href="https://isakhorvath.me/tavro-blog-svelte/" className="App-link">blog</a>
+          <Link to="/blog" className="App-link">
+            blog
+          </Link>
         </div>
       </header>
       <main className='App-about-main'>
@@ -37,15 +52,15 @@ function About() {
                     <img src={profile} alt="profile"/>
                     <div className='App-about-meta'>
                         <p>feel free to contact me! :-)</p>
-                        <FaDiscord className='Icon'/>
-                        <FaFacebookSquare className='Icon'/>
-                        <FaInstagram className='Icon'/>
-                        <FaLinkedin className='Icon'/>
-                        <SiGmail className='Icon'/>
+                        <a href="https://discord.com/users/219786295097032715"><FaDiscord className='Icon'/></a>
+                        <a href="https://www.facebook.com/profile.php?id=100006285705451"><FaFacebookSquare className='Icon'/></a>
+                        <a href="https://www.instagram.com/isakhorvath"><FaInstagram className='Icon'/></a>
+                        <a href="https://www.linkedin.com/in/isak-horvath-683950165"><FaLinkedin className='Icon'/></a>
+                        <a href="mailto:isakhorvath@gmail.com"><SiGmail className='Icon'/></a>
                     </div>
                 </div>
                 <div className='App-about-question'>
-                    <h1>get to know me</h1>
+                    <h1>> { word }<span className='App-blink'>_</span></h1>
                     <hr/>
                     <p>
                         i am a passionate full-stack software developer. currently, i am in the final year of my computer science master's program, where i am honing my skills and expanding my knowledge.
