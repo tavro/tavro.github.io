@@ -1,8 +1,10 @@
 .App-about-wrapper {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+/*
 .App-about-icons {
     border: 1px solid rgb(251, 250, 244, 0.1);
     border-radius: 8px;
@@ -20,6 +22,7 @@
     color: rgb(251, 250, 244);
     border-radius: 8px;
 }
+*/
 
 .Icon {
     font-size: 32px;
@@ -33,10 +36,12 @@
     color:rgb(251, 250, 244);
 }
 
+/*
 .App-about-rows {
     display: flex;
     flex-direction: column;
 }
+*/
 
 .App-about-me {
     display: flex;
@@ -52,12 +57,16 @@
 
 .App-about-img {
     width: 30%;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .App-about-question {
     color: rgb(87, 158, 64);
     text-align: left;
     width: 70%;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .App-about-question p, .App-about-img p {
@@ -82,21 +91,13 @@ hr {
 }
 
 @media (max-width: 1280px) {
-    .App-about-me {
-        flex-direction: column;
-    }
-
     .App-about-img {
-        width: 100%;
+        display: none;
     }
 
     .App-about-question {
         width: 100%;
-    }
-
-    .App-about-wrapper {
-        display: flex;
-        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
-

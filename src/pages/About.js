@@ -47,8 +47,8 @@ function About() {
           </Link>
         </div>
       </header>
+      <div className="App-about-wrapper">
       <main className='App-about-main'>
-        <div className='App-about-rows'>
             <div className='App-about-me'>
                 <div className='App-about-img'>
                     <img src={profile} alt="profile"/>
@@ -65,10 +65,7 @@ function About() {
                     <h1>> { word }<span className='App-blink'>_</span></h1>
                     <hr/>
                     <p>
-                        i am a passionate full-stack software developer. currently, i am in the final year of my computer science master's program, where i am honing my skills and expanding my knowledge.
-                    </p>
-                    <p>
-                        one of the things that excites me the most about being a software developer is the ever-evolving nature of the field. i thrive on learning new technologies and programming languages.
+                        i am a passionate full-stack software developer. currently, i am in the final year of my computer science master's program, where i am honing my skills and expanding my knowledge. i thrive on learning new technologies and programming languages.
                     </p>
                     <p>
                         beyond my love for programming, i am a people person. i genuinely enjoy meeting new individuals and collaborating on various projects. i believe that building strong relationships not only fosters a supportive work environment but also fuels innovation and creativity.
@@ -78,6 +75,8 @@ function About() {
                     </p>
                 </div>
             </div>
+        
+            {/*
             <div className='App-about-wrapper'>
                 <div className='App-about'>
                     <h2>tools i use</h2>
@@ -281,8 +280,9 @@ function About() {
                     </div>
                 </div>
             </div>
-        </div>
+            */}
       </main>
+      </div>
     </div>
   );
 }
