@@ -1,221 +1,140 @@
-  .App-profile {
-    height: 40vmin;
-    border-radius: 50%;
-    pointer-events: none;
-  }
-  
-  .App-link {
-    text-decoration: none;
-    color: rgba(251, 250, 244, 0.6);
-    transition: 0.3s;
-  }
-  
-  .App-link:hover {
-    color:rgb(87, 158, 64, 0.6);
-  }
-  
-  .App-main {
-    display: flex;
-    text-align: center;
-    margin-top: 10%;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  
-  .App-meta {
-    flex-basis: 50%;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .App-image {
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-  }
-  
-  .App-profile {
-    width: 312px;
-    height: 312px;
-  }
-  
-  .App-desc {
-    font-size: 18px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    color: rgba(251, 250, 244, 0.6);
-  }
-  
-  .App-title {
-    padding: 0;
-    margin: 0;
-    font-size: 96px;
-    font-weight: 900;
-    color: rgb(251, 250, 244);
-  } 
-  
-  .App-subtitle {
-    padding: 0;
-    margin: 0;
-    font-size: 60px;
-    font-weight: 700;
-    color: rgb(87, 158, 64);
-  } 
-  
-  .App-meta-wrapper {
-    margin: auto;
-  }
-  
-  .App-button {
-    background-color: rgb(251, 250, 244);
-    border-radius: 8px;
-    width: 192px;
-    height: 60px;
-    margin-right: 8px;
-    border: 2px solid rgb(251, 250, 244);
-    color: rgb(29, 31, 28);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-  }
-  
-  .App-button:hover {
-    background-color: rgb(251, 250, 244, 0.1);
-    border-radius: 8px;
-    width: 192px;
-    height: 60px;
-    margin-right: 8px;
-    border: 2px solid rgb(251, 250, 244);
-    color: rgb(251, 250, 244);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  
-  .App-button-alt {
-    background-color: rgb(29, 31, 28);
-    color: rgb(29, 31, 28);
-    border-radius: 8px;
-    width: 192px;
-    height: 60px;
-    margin-right: 8px;
-    border: 2px solid rgb(251, 250, 244);
-    display: flex;
-    justify-content: center;
-    color: rgb(251, 250, 244);
-    align-items: center;
-    transition: 0.3s;
-  }
-  
-  .App-button-alt:hover {
-    background-color: rgb(251, 250, 244, 0.1);
-    color: rgb(251, 250, 244);
-    border-radius: 8px;
-    width: 192px;
-    height: 60px;
-    margin-right: 8px;
-    border: none;
-    border: 2px solid rgb(251, 250, 244);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  
-  .App-button-text {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  
-  .App-button-text-alt {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  
-  .App-button-wrapper {
-    display: flex;
-  }
-  
-  .App-header {
-    display: flex;
-    padding: 8px;
-  }
-  
-  .App-nav-wrapper {
-    color: rgb(251, 250, 244);
-    font-size: 18px;
-    margin: 8px;
-  }
-  
-  #App-nav-selected {
-    color:rgb(87, 158, 64);
-  }
-  
-  .App-blink {
-    animation: blinker 1s linear infinite;
-  }
-  
-  @keyframes blinker {
+.Home {
+  max-width: 512px;
+}
+
+.App-header {
+  display: flex;
+}
+
+.App-nav-wrapper {
+  color: rgb(251, 250, 244);
+  margin-bottom: 48px;
+  margin-right: 8px;
+}
+
+.App-link {
+  text-decoration: none;
+  color: rgba(251, 250, 244, 0.6);
+  transition: 0.3s;
+}
+
+.App-link:hover {
+  color:rgb(87, 158, 64, 0.6);
+}
+
+.App-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  color: rgb(251, 250, 244);
+}
+
+.App-subtitle {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  color: rgb(87, 158, 64);
+}
+
+.App-desc {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: rgba(251, 250, 244, 0.6);
+}
+
+.App-blink {
+  animation: blinker 1s linear infinite;
+}
+
+.App-button-link {
+  text-decoration: none;
+}
+
+.App-button {
+  background-color: rgb(251, 250, 244);
+  border-radius: 8px;
+  height: 60px;
+  margin-right: 8px;
+  border: 2px solid rgb(251, 250, 244);
+  color: rgb(29, 31, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  margin-bottom: 8px;
+}
+
+.App-button:hover {
+  background-color: rgb(251, 250, 244, 0.1);
+  border-radius: 8px;
+  height: 60px;
+  margin-right: 8px;
+  border: 2px solid rgb(251, 250, 244);
+  color: rgb(251, 250, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.App-button-alt {
+  background-color: rgb(29, 31, 28);
+  color: rgb(29, 31, 28);
+  border-radius: 8px;
+  height: 60px;
+  margin-right: 8px;
+  border: 2px solid rgb(251, 250, 244);
+  display: flex;
+  justify-content: center;
+  color: rgb(251, 250, 244);
+  align-items: center;
+  transition: 0.3s;
+}
+
+.App-button-alt:hover {
+  background-color: rgb(251, 250, 244, 0.1);
+  color: rgb(251, 250, 244);
+  border-radius: 8px;
+  height: 60px;
+  margin-right: 8px;
+  border: none;
+  border: 2px solid rgb(251, 250, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.App-button-text {
+  text-align: center;
+  font-weight: 700;
+}
+
+.App-button-text-alt {
+  text-align: center;
+  font-weight: 700;
+}
+
+.App-button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes blinker {
   50% {
     opacity: 0;
   }
+}
+
+#App-nav-selected {
+  color:rgb(87, 158, 64);
+}
+
+/*
+  .App-button-wrapper {
+    display: flex;
   }
-  
-  .App-button-link {
-    text-decoration: none;
-  }
 
-  @media (max-width: 800px) {
-    .App-title {
-        padding: 0;
-        margin: 0;
-        font-size: 60px;
-        font-weight: 900;
-        color: rgb(251, 250, 244);
-      } 
-      
-      .App-subtitle {
-        padding: 0;
-        margin: 0;
-        font-size: 40px;
-        font-weight: 700;
-        color: rgb(87, 158, 64);
-      } 
-      
-      .App-button-wrapper {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .App-button {
-        width: 256px;
-        margin-bottom: 8px;
-      }
-
-      .App-button-alt {
-        width: 256px;
-      }
-
-      .App-button:hover {
-        width: 256px;
-        margin-bottom: 8px;
-      }
-
-      .App-button-alt:hover {
-        width: 256px;
-      }
-      
-      .App-image {
-        display: none;
-      }
-  }
+  */

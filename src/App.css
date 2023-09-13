@@ -1,4 +1,15 @@
+html,
 body {
+  margin: 0;
   background-color: rgb(29, 31, 28);
   font-family: Ubuntu;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.Main {
+  display: flex;
+  width: 100%;    
+  flex-direction: column;
+  align-items: center;
 }

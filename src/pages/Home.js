@@ -39,32 +39,23 @@ function Home() {
           </Link>
         </div>
       </header>
-      <main className='App-main'>
-        <div className='App-meta'>
-          <div className='App-meta-wrapper'>
-            <div>
-              <div className='App-titles'>
-                <h1 className='App-title'>tavro</h1>
-                <h2 className='App-subtitle'>> { word }<span className='App-blink'>_</span></h2>
-              </div>
-              <p className='App-desc'>i am a 23 year-old software developer from sweden</p>
+      <main className='Main'>
+        <div className='Home'>
+        <h1 className='App-title'>tavro</h1>
+        <h2 className='App-subtitle'>> { word }<span className='App-blink'>_</span></h2>
+        <p className='App-desc'>i am a software developer from sweden, browse this website for more details.</p>
+        <div className='App-button-wrapper'>
+          <a href="https://isakhorvath.me/digital-cv/" className='App-button-link'>
+            <div className='App-button'>
+              <p className='App-button-text'>my digital resumé</p>
             </div>
-            <div className='App-button-wrapper'>
-              <a href="https://isakhorvath.me/digital-cv/" className='App-button-link'>
-                <div className='App-button'>
-                  <p className='App-button-text'>my digital cv</p>
-                </div>
-              </a>
-              <a href='https://github.com/tavro' className='App-button-link'>
-                <div className='App-button-alt'>
-                  <p className='App-button-text-alt'>github</p>
-                </div>
-              </a>
+          </a>
+          <a href='https://github.com/tavro' className='App-button-link'>
+            <div className='App-button-alt'>
+              <p className='App-button-text-alt'>github</p>
             </div>
-          </div>
+          </a>
         </div>
-        <div className='App-image'>
-          <img src={profile} className="App-profile" alt="profile"/>
         </div>
       </main>
     </div>

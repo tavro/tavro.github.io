@@ -47,10 +47,9 @@ function About() {
           </Link>
         </div>
       </header>
-      <div className="App-about-wrapper">
-      <main className='App-about-main'>
-            <div className='App-about-me'>
-                <div className='App-about-img'>
+      <main className='Main'>
+        <div className="Center-Wrapper">
+                <div className='App-contact'>
                     <img src={profile} alt="profile"/>
                     <div className='App-about-meta'>
                         <p>feel free to contact me! :-)</p>
@@ -61,7 +60,7 @@ function About() {
                         <a href="mailto:isakhorvath@gmail.com"><SiGmail className='Icon'/></a>
                     </div>
                 </div>
-                <div className='App-about-question'>
+                <div className='App-about'>
                     <h1>> { word }<span className='App-blink'>_</span></h1>
                     <hr/>
                     <p>
@@ -74,7 +73,7 @@ function About() {
                         while i have a broad interest in various aspects of software development, i have developed a particular fascination with compilers, language construction, and operating systems. 
                     </p>
                 </div>
-            </div>
+        </div>
         
             {/*
             <div className='App-about-wrapper'>
@@ -282,7 +281,6 @@ function About() {
             </div>
             */}
       </main>
-      </div>
     </div>
   );
 }
