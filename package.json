@@ -16,6 +16,8 @@
     "react-markdown": "^8.0.7",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-mdx-code-props": "^1.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

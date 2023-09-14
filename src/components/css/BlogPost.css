@@ -1,3 +1,47 @@
 .Mdx-Styling p {
     color: rgba(251, 250, 244, 0.6);
 }
+
+.Mdx-Styling h2 {
+    color: rgb(87, 158, 64);
+}
+
+.Mdx-Styling {
+    width: 100%;
+}
+
+.Post-Header, .Post-Tags {
+    width: 100%;
+}
+
+.Post-Info {
+    color: rgb(87, 158, 64, 0.6);
+}
+
+.Category-Link {
+    color: rgb(87, 158, 64, 0.6);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.Tag-Link {
+    color: rgb(87, 158, 64, 0.3);
+    font-weight: 700;
+    font-style: italic;
+    margin-right: 16px;
+}
+
+.Category-Link:hover, .Tag-Link:hover {
+    color: rgb(87, 158, 64);
+    font-weight: 700;
+    font-style: italic;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    tab-size: 4;
+}
+
+pre {
+    border: 2px solid rgb(87, 158, 64, 0.4);
+}

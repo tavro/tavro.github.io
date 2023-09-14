@@ -23,13 +23,14 @@ function Blog() {
 
   const blogPosts = [
     {
-        title: "my first blog post (again)",
-        timestamp: "2023-05-18 20:39",
-        date: "2023-05-18",
-        time: "20:39",
-        category: "general",
-        content: "...",
-        slug: "first-blog-post"
+      title: "new blog features",
+      date: "2023-09-13",
+      slug: "new-blog-features"
+    },
+    {
+      title: "my first blog post (again)",
+      date: "2023-05-18",
+      slug: "first-blog-post"
     }
   ]
   
