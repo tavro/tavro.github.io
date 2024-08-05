@@ -1,0 +1,28 @@
+.App-contact {
+    text-align: center;
+}
+
+.App-about {
+    max-width: 60%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .App-about {
+        max-width: 100%;
+    }
+}
+
+.Icon {
+    transition: 0.3s;
+    padding: 8px;
+}
+
+img {
+    border-radius: 8px;
+    width: 256px;
+}
+
+#profile-img {
+    margin-top: 64px;
+}

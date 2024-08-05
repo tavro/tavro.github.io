@@ -1,0 +1,179 @@
+.Mdx-Styling {
+  width: 100%;
+}
+
+.Post-Tags {
+  width: 100%;
+}
+
+.Category-Link {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.Tag-Link {
+  font-weight: 700;
+  font-style: italic;
+  margin-right: 16px;
+}
+
+.Category-Link:hover,
+.Tag-Link:hover {
+  font-weight: 700;
+  font-style: italic;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  tab-size: 4;
+}
+
+img[alt="Buttons"] {
+  width: 300px;
+}
+
+.Post-Wrapper {
+  max-width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Post-Wrapper {
+    max-width: 100%;
+  }
+}
+
+.Interaction-Wrapper {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.Post-Icon {
+  margin: 8px;
+  font-size: 32px;
+}
+
+.Post-Icon:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.overlay-content h2 {
+  font-size: 18px;
+}
+
+.overlay-content input {
+  display: block;
+  padding: 8px;
+  margin: auto;
+}
+
+.overlay-content button {
+  margin: 8px 4px;
+  width: 92px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#upvotes {
+  font-size: "1.2em";
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.Comments-Wrapper {
+  margin-top: 40px;
+}
+
+.Comments-Wrapper h2 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.comment {
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.comment-date {
+  font-size: small;
+}
+
+.comment-username {
+  font-weight: bold;
+}
+
+.comment-content {
+  margin-top: 10px;
+}
+
+#comment-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#comment-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.Post-Header {
+  display: flex;
+  flex-direction: column;
+}
+
+.Post-Header-Title {
+  display: flex;
+  align-items: baseline;
+}
+
+.Post-Title {
+  margin: 0;
+}
+
+.Post-Word-Count {
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .Post-Header-Title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Post-Word-Count {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.Post-Wrapper hr {
+  width: 100%;
+}
