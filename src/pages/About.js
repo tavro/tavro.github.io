@@ -72,13 +72,10 @@ function About() {
             <img src={profile} alt="profile" id="profile-img" />
             <div className="App-about-meta">
               <p>feel free to contact me! :-)</p>
-              <a href="https://discord.com/users/219786295097032715">
-                <FaDiscord className="Icon" />
-              </a>
               <a href="https://www.facebook.com/profile.php?id=100006285705451">
                 <FaFacebookSquare className="Icon" />
               </a>
-              <a href="https://www.instagram.com/isakhorvath">
+              <a href="https://www.instagram.com/tyson.horvath">
                 <FaInstagram className="Icon" />
               </a>
               <a href="https://www.linkedin.com/in/isak-horvath-683950165">
@@ -96,8 +93,7 @@ function About() {
             </h1>
             <hr />
             <p>
-              i am a passionate full-stack software developer. currently, i am
-              in the final semester of my computer science master's program.
+              i am a passionate software developer with a master's degree in computer science. currently, i am working for opera software.
             </p>
             <p>
               beyond my love for programming, i am a people person. i like
