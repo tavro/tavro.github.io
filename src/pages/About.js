@@ -71,50 +71,36 @@ function About() {
           <div className="App-contact">
             <img src={profile} alt="profile" id="profile-img" />
             <div className="App-about-meta">
-              <p>feel free to contact me! :-)</p>
-              <a href="https://discord.com/users/219786295097032715">
-                <FaDiscord className="Icon" />
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=100006285705451">
-                <FaFacebookSquare className="Icon" />
-              </a>
-              <a href="https://www.instagram.com/isakhorvath">
-                <FaInstagram className="Icon" />
-              </a>
-              <a href="https://www.linkedin.com/in/isak-horvath-683950165">
-                <FaLinkedin className="Icon" />
-              </a>
-              <a href="mailto:isakhorvath@gmail.com">
-                <SiGmail className="Icon" />
-              </a>
+              <p>feel free to <a href="mailto:isakhorvath@gmail.com">contact me!</a> :-)</p>
             </div>
-          </div>
-          <div className="App-about">
-            <h1>
-              > {word}
-              <span className="App-blink">_</span>
-            </h1>
-            <hr />
-            <p>
-              i am a passionate full-stack software developer. currently, i am
-              in the final semester of my computer science master's program.
-            </p>
-            <p>
-              beyond my love for programming, i am a people person. i like
-              meeting new people and collaborating on various projects, so
-              please don't be afraid to reach out!
-            </p>
-            <p>
-              while i have a broad interest in various aspects of software
-              development, i have developed a particular fascination with
-              compilers, language construction, and operating systems.
-            </p>
-            <p>
-              if you want to know what i'm up to right now, check out my{" "}
-              <a href="https://isakhorvath.me/now" className="App-link-alt">
-                now page
-              </a>
-            </p>
+            <div className="App-about">
+              <h1>
+                > {word}
+                <span className="App-blink">_</span>
+              </h1>
+              <hr />
+              <p>
+                i am a passionate software developer with a master's degree in
+                computer science. currently, i am working for opera software.
+              </p>
+              <p>
+                beyond my love for programming, i am a people person. i like
+                meeting new people and collaborating on various projects, so
+                please don't be afraid to{" "}
+                <a href="mailto:isakhorvath@gmail.com">reach out!</a>
+              </p>
+              <p>
+                while i have a broad interest in various aspects of software
+                development, i have developed a particular fascination with
+                compilers, language construction, and operating systems.
+              </p>
+              <p>
+                if you want to know what i'm up to right now, check out my{" "}
+                <a href="https://isakhorvath.me/now" className="App-link-alt">
+                  now page
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </main>

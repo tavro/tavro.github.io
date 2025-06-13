@@ -15,13 +15,39 @@ function Home() {
     return savedTheme ? savedTheme === "dark" : false;
   });
 
+  function getRandomPhrase() {
+    const phrases = [
+      "404: brain not found",
+      "code. sleep. coffee. repeat.",
+      "commit, push, pray.",
+      "turn it off and on again.",
+      "sudo make-it-work",
+      "bug or feature? you decide.",
+      "tabs > spaces",
+      "real devs debug in production",
+      "undefined is not a function",
+      "segmentation fault (core dumped)",
+      "rm -rf /",
+      "works on my machine!",
+      "this should work... in theory.",
+      "compiling... go grab a coffee.",
+      "hello world! again.",
+      "why does it work? no idea.",
+      "todos and fixme comments ftw!",
+      "let me just google that real quick...",
+    ];
+
+    return phrases[Math.floor(Math.random() * phrases.length)];
+  }
+  const phrase = getRandomPhrase()
+
   useEffect(() => {
     document.body.className = isDarkTheme ? "dark-theme" : "light-theme";
     localStorage.setItem("theme", isDarkTheme ? "dark" : "light");
   }, [isDarkTheme]);
 
   useEffect(() => {
-    printWord("it's me isak", 100);
+    printWord(phrase, 100);
 
     fetch("https://blogbackend-3043faadd9fc.herokuapp.com/api/log-visitor", {
       method: "POST",
