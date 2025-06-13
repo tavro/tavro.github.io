@@ -205,6 +205,10 @@ body.dark-theme .Icon {
   color: rgb(251, 250, 244, 0.3);
 }
 
+.App-about {
+  text-align: left;
+}
+
 body.light-theme .App-contact p, body.light-theme .App-about p {
   color: rgba(var(--light-text-primary-alpha), 0.7);
 }
