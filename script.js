@@ -1,0 +1,149 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll("nav ul li a");
+  const sections = document.querySelectorAll("section");
+
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === "#") {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const footer = document.querySelector("footer");
+        footer.style.display = "none";
+
+        navLinks.forEach((el) => {
+          el.classList.remove("active");
+          el.textContent = "/" + el.id;
+        });
+
+        this.classList.add("active");
+        this.textContent = "<" + this.id + "/>";
+
+        sections.forEach((section) => {
+          section.style.display = "none";
+        });
+
+        const targetSection = document.querySelector("section." + this.id);
+        if (targetSection) {
+          targetSection.style.display = "block";
+        }
+
+        switch (this.id) {
+          case "home":
+            footer.style.display = "block";
+            break;
+          case "resume":
+            document.getElementById("age").textContent = calculateAge();
+            break;
+          case "blog":
+            listBlogPosts();
+            break;
+        }
+      });
+    }
+  });
+});
+
+async function getUniqueVisitors() {
+  const url =
+    "https://blogbackend-3043faadd9fc.herokuapp.com/api/unique-visitors";
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+    const contents = await response.json();
+    const visitorsElement = document.getElementById("visitors");
+    visitorsElement.innerHTML = contents.uniqueVisitors;
+  } catch (error) {
+    console.error("Error fetching amount of unique visitors:", error);
+  }
+}
+
+async function logVisitor() {
+  const url = "https://blogbackend-3043faadd9fc.herokuapp.com/api/log-visitor";
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error logging visitor: ${response.status}`);
+    }
+  } catch (error) {
+    console.error("Error logging visitor:", error);
+  }
+}
+
+async function listBlogPosts() {
+  const url = "https://api.github.com/repos/tavro/blog-posts/contents/";
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+    const contents = await response.json();
+
+    const fileNames = contents
+      .filter((item) => item.type === "file")
+      .map((file) => ({
+        name: file.name.replace(/\.md$/, ""),
+        url: file.html_url,
+      }));
+
+    const ulElement = document.getElementById("blog-posts");
+    ulElement.innerHTML = "";
+
+    fileNames.forEach(({ name, url }) => {
+      const li = document.createElement("li");
+      li.style.cssText = `
+          font-family: Verdana, Geneva, sans-serif;
+          color: black;
+          border: 2px dotted #555;
+          padding: 6px;
+          margin-bottom: 4px;
+        `;
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.textContent = name;
+      a.style.cssText = `
+          color: #6fcf6f;
+          text-decoration: underline;
+          font-weight: bold;
+        `;
+      a.target = "_blank";
+
+      li.appendChild(a);
+      ulElement.appendChild(li);
+    });
+  } catch (error) {
+    console.error("Error fetching repo contents:", error);
+  }
+}
+
+function calculateAge() {
+  const birthDate = new Date(2000, 2, 22);
+  const today = new Date();
+
+  let age = today.getFullYear() - birthDate.getFullYear();
+
+  const hasHadBirthdayThisYear =
+    today.getMonth() > birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() &&
+      today.getDate() >= birthDate.getDate());
+
+  if (!hasHadBirthdayThisYear) {
+    age--;
+  }
+
+  return age;
+}
+
+window.addEventListener("load", () => {
+  logVisitor();
+  getUniqueVisitors();
+});

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>tyson horvath</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="res/icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+  <body class="dark-mode">
+    <header class="">
+      <!-- TODO: alternative header, inspired by https://bjhess.com/ -->
+      <h1>th@tavro:~/$ <span class="header-cursor"></span></h1>
+      <nav>
+        <ul>
+          <li><a id="home" href="#" class="active">&lt;home/&gt;</a></li>
+          <li><a id="resume" href="#">/resume</a></li>
+          <li><a id="blog" href="#">/blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home">
+      <h2>hey, i'm tyson!</h2>
+      <div class="about-wrapper">
+        <img src="res/profile.jpg" alt="profile" />
+        <div class="about-text-wrapper">
+          <p>
+            my name is tyson<a
+              href="#"
+              style="
+                font-size: 10px;
+                vertical-align: super;
+                text-decoration: none;
+              "
+              >(?)</a
+            >
+            <!-- TODO: connect to blog post -->
+            horvath<a
+              href="#"
+              style="
+                font-size: 10px;
+                vertical-align: super;
+                text-decoration: none;
+              "
+              >(?)</a
+            ><!-- TODO: connect to blog post -->, and i am a passionate software
+            developer. while i have a broad interest in various aspects of
+            computer science, i have developed a particular fascination with
+            compilers, language construction, and operating systems.
+          </p>
+          <p>
+            beyond my love for programming, i am a people person. i like meeting
+            new people and collaborating on projects.
+          </p>
+        </div>
+      </div>
+      <div class="visitors">
+        <p>
+          <b><span id="visitors"></span> unique visitors</b>
+        </p>
+        <small>since july 24, 2024</small>
+      </div>
+    </section>
+
+    <section class="resume" style="display: none">
+      <div class="resume-intro">
+        <h2>tyson horvath</h2>
+        <!-- TODO: print button -->
+        <small><span id="email"></span>@gmail.com</small>
+        <p>
+          i am a <span id="age"></span> year-old software developer, currently
+          living in sweden. i have a master's degree in computer science and i
+          am currently employed for
+          <mark><a href="https://www.opera.com">Opera Software</a></mark
+          >, the browser company. func fact, i wrote
+          <mark>my first program</mark
+          ><!-- TODO: connect to blog post -->
+          in 2012, when i was only 12 years old! :-)
+        </p>
+        <p>
+          if you are interested in seeing a more detailed list of my previous
+          work experiences, check out my
+          <mark
+            ><a href="https://www.linkedin.com/in/isak-horvath-683950165"
+              >linkedin↗</a
+            ></mark
+          >, and if you are curious about looking at my code, check out my
+          <mark><a href="https://github.com/tavro">github↗</a></mark
+          >.
+        </p>
+      </div>
+      <h2 class="resume-header">here is some of my work experiences</h2>
+      <h3>@ Opera Sweden AB</h3>
+      <p>
+        Opera is a global internet brand with a user base of approximately 300
+        million average monthly active users.
+      </p>
+      <hr />
+      <div>
+        <p>
+          <b><span class="gray">2025 |</span> Kotlin Multiplatform Developer </b
+          ><span class="gray hidable">@ MiniPay</span>
+        </p>
+        <small
+          >building the client for a stablecoin-based, non-custodial wallet that
+          enables instant, phone number-based transactions.</small
+        >
+      </div>
+      <div>
+        <p>
+          <b
+            ><span class="gray">2024 |</span> gRCP API Platform (Master Thesis) </b
+          ><span class="gray hidable">@ MiniPay</span>
+        </p>
+        <small
+          >development of a platform for interaction with gRPC services outside
+          of traditional development environments.</small
+        >
+      </div>
+      <div>
+        <p>
+          <b
+            ><span class="gray">2023 |</span> Crypto Browser Developer (Intern) </b
+          ><span class="gray hidable">@ Crypto</span>
+        </p>
+        <small
+          >contributed to the development of Opera's crypto wallet using Vue.js
+          and TypeScript.</small
+        >
+      </div>
+      <div>
+        <p>
+          <b><span class="gray">2022 |</span> Student Ambassador</b>
+        </p>
+      </div>
+      <div>
+        <p>
+          <b><span class="gray">2022 |</span> DIRE Developer (Intern) </b
+          ><span class="gray hidable">@ OfA</span>
+        </p>
+        <small
+          >enhanced and maintained a remote testing environment for mobile
+          software.</small
+        >
+      </div>
+      <h3>@ Linköpings University</h3>
+      <p>
+        LiU is a public research university based in linköping and is one of
+        sweden's largest academic institutions.
+      </p>
+      <hr />
+      <h4>IDA (Teacher, Lecturer & Laboratory Assistant)</h4>
+      <p>
+        <b class="gray">2023 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDDI82">TDDI82</a></mark
+        >, Object Oriented Problem Solving <span class="gray">@ UPP</span>
+      </p>
+      <p>
+        <b class="gray">2023 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDDI83">TDDI83</a></mark
+        >, Professionalism for Engineers <span class="gray">@ UPP</span>
+      </p>
+      <p>
+        <b class="gray">2022 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDDE10">TDDE10</a></mark
+        >, OO-programming & Java <span class="gray">@ UPP</span>
+      </p>
+      <p>
+        <b class="gray">2022 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDP005">TDP005</a></mark
+        >, Project: Object Oriented System <span class="gray">@ UPP</span>
+      </p>
+      <p>
+        <b class="gray">2022 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDP004">TDP004</a></mark
+        >, OO-programming & C++ <span class="gray">@ UPP</span>
+      </p>
+      <p>
+        <b class="gray">2022 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDDI16">TDDI16</a></mark
+        >, Datastructures & Algorithms <span class="gray">@ UPP</span>
+      </p>
+      <p>
+        <b class="gray">2022 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDDD78">TDDD78</a></mark
+        >, OO-programming & Java <span class="gray">@ SaS</span>
+      </p>
+      <p>
+        <b class="gray">2021 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDDE24">TDDE24</a></mark
+        >, Functional & Imperative programming <span class="gray">@ SaS</span>
+      </p>
+      <p>
+        <b class="gray">2021 |</b>
+        <mark><a href="https://studieinfo.liu.se/kurs/TDDE23">TDDE23</a></mark
+        >, Functional & Imperative programming <span class="gray">@ SaS</span>
+      </p>
+      <h2 class="resume-header">
+        i have also been involved in some organizations
+      </h2>
+      <h3>@ LiTHe Hax</h3>
+      <p>
+        LiTHe Hax is an ethical hacking association, founded by me in march 2024
+        to promote cybersecurity skills by organizing and participating in
+        hacking competitions.
+      </p>
+      <hr />
+      <div>
+        <p>
+          <b class="gray">2025 |</b> Chairman
+          <span class="gray">@ CTF Commitee</span>
+        </p>
+        <p>
+          <b class="gray">2025 |</b> Chairman <span class="gray">@ Board</span>
+        </p>
+        <p><b class="gray">2024 |</b> Founder, Chairman</p>
+        <small
+          >there is much to share, but in brief, i recruited and led a team to
+          organize hacking-related activities. in our first year, we grew to
+          around 80 members and secured sponsorships from multiple
+          companies.</small
+        >
+      </div>
+
+      <h3>@ LinTek</h3>
+      <p>
+        Linköpings Teknologers Studentkår is the official student union for
+        science and engineering students at Linköping University.
+      </p>
+      <hr />
+      <div>
+        <p>
+          <b class="gray">2025 |</b> Editor in Chief
+          <span class="gray">@ LiTHanian</span>
+        </p>
+        <p>
+          <b class="gray">2024 |</b> Editor in Chief
+          <span class="gray">@ LiTHanian</span>
+        </p>
+        <small
+          >led a team of eleven in producing four magazines (each around 40
+          pages), handling everything from recruiting and planning to writing,
+          illustrating, photography and more.</small
+        >
+      </div>
+
+      <h3>@ Matematiska- Naturvetenskapliga sektionen</h3>
+      <p>
+        MatNat-sektionen is the student section at Linköping University for
+        students studying biology, chemistry, physics, mathematics and related
+        programs.
+      </p>
+      <hr />
+      <div>
+        <p>
+          <b class="gray">2023 |</b> Chairman, Webmaster
+          <span class="gray">@ Gudfadderiet</span>
+        </p>
+        <small
+          >led a team of eleven in planning and organizing the reception period
+          for new students at MatNat-sektionen. also developed and maintained
+          their website using React.</small
+        >
+      </div>
+
+      <h3>@ Datateknologsektionen</h3>
+      <p>
+        D-sektionen is the student section at Linköping University for students
+        in computer science.
+      </p>
+      <hr />
+      <div>
+        <p><b class="gray">2024 |</b> Accountant</p>
+        <small
+          >reviewed the organization's internal processes and activities to
+          ensure everything was running smoothly and according to rules.</small
+        >
+      </div>
+      <div>
+        <p>
+          <b class="gray">2022 |</b> Webmaster <span class="gray">@ WebbU</span>
+        </p>
+        <p>
+          <b class="gray">2021 |</b> Webmaster <span class="gray">@ WebbU</span>
+        </p>
+        <small
+          >lead a group of nine people in developing and maintaining several
+          websites, services and projects used by students at Linköpings
+          University.</small
+        >
+      </div>
+      <div>
+        <p>
+          <b class="gray">2021 |</b> Webmaster
+          <span class="gray">@ STABEN</span>
+        </p>
+        <small
+          >developed and maintained a React-based website to provide information
+          and guidance for students participating in the reception period at
+          Linköping University.</small
+        >
+      </div>
+
+      <h3>@ Formula Student</h3>
+      <p>
+        Formula Student is an international engineering design organization and
+        competition where university students design, build and race a small
+        formula-style race car
+      </p>
+      <hr />
+      <div>
+        <p>
+          <b class="gray">2021 |</b> Software Engineer
+          <span class="gray">@ Driverless</span>
+        </p>
+        <small
+          >wrote and maintained C++ and Python code for a self-driving car using
+          ROS.</small
+        >
+      </div>
+      <div>
+        <p><b class="gray">2021 |</b> Server Manager</p>
+        <small
+          >managed and maintained the Linux-based server hosting the Formula
+          Student website and related services.</small
+        >
+      </div>
+    </section>
+
+    <section class="blog" style="display: none">
+      <h2>blog posts</h2>
+      <p>
+        for now, these entries link to the original .md files. eventually, i
+        plan to display them in a cleaner format directly on my website, similar
+        to how i did on my old blog.
+      </p>
+      <ul id="blog-posts"></ul>
+    </section>
+
+    <footer>
+      <small>
+        this website was written by a human, by hand, using HTML, CSS and
+        JavaScript. <mark>no large language models</mark
+        ><!-- TODO: connect to blog post -->
+        were involved (while i'd like to say “no AI” the term is too broad, and
+        i can't guarantee that AI wasn't involved indirectly — for example, in
+        tools and libraries, or platforms used during development). there's also
+        a <mark>plain text only</mark
+        ><!-- TODO: link to website -->
+        version available if you'd prefer to browse that.
+      </small>
+    </footer>
+  </body>
+</html>

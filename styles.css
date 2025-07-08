@@ -1,0 +1,192 @@
+.resume-intro h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#email:before {
+  content: "-----------";
+}
+
+#email:hover:before {
+  content: "isakhorvath";
+}
+
+.resume {
+  padding-bottom: 48px;
+}
+
+.gray {
+  color: #555;
+}
+
+header h1 {
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+mark {
+  color: white;
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(32, 136, 12, 0.1),
+    rgba(32, 136, 12, 0.7) 4%,
+    rgba(32, 136, 12, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+mark a {
+  color: white;
+}
+
+.visitors p {
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+}
+
+small {
+  color: #555;
+  padding: 0;
+  margin: 0;
+}
+
+.header-cursor {
+  display: inline-block;
+  width: 12px;
+  height: 20px;
+  background: white;
+  margin-left: 5px;
+  border-radius: 1px;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+#blog-posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#blog-posts li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  display: block;
+  color: #555555;
+}
+
+nav a.active {
+  color: #6fcf6f;
+  font-weight: bold;
+}
+
+body {
+  max-width: 720px;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dark-mode {
+  background: #111111;
+  color: white;
+}
+
+.home,
+.resume,
+.blog,
+.now,
+.explore {
+  padding-top: 96px;
+}
+
+.resume-header {
+  padding-top: 48px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.about-text-wrapper p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.about-text-wrapper a {
+  color: #555;
+}
+
+img {
+  width: 128px;
+  height: 128px;
+  border-radius: 8px;
+}
+
+h1,
+h2 {
+  width: fit-content;
+  background: linear-gradient(120deg, #20880c 0, #6fcf6f 37.5%, #20880c 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+footer {
+  position: absolute;
+  max-width: 720px;
+  bottom: 32px;
+}
