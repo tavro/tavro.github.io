@@ -15,6 +15,7 @@
           <li><a id="home" href="#" class="active">&lt;home/&gt;</a></li>
           <li><a id="resume" href="#">/resume</a></li>
           <li><a id="blog" href="#">/blog</a></li>
+          <li><a id="explore" href="#">/explore</a></li>
         </ul>
       </nav>
     </header>
@@ -26,7 +27,7 @@
         <div class="about-text-wrapper">
           <p>
             my name is tyson<a
-              href="#"
+              href="https://github.com/tavro/blog-posts/blob/main/the-origin-of-my-names.md"
               style="
                 font-size: 10px;
                 vertical-align: super;
@@ -34,21 +35,20 @@
               "
               >(?)</a
             >
-            <!-- TODO: connect to blog post -->
             horvath<a
-              href="#"
+              href="https://github.com/tavro/blog-posts/blob/main/the-origin-of-my-names.md"
               style="
                 font-size: 10px;
                 vertical-align: super;
                 text-decoration: none;
               "
               >(?)</a
-            ><!-- TODO: connect to blog post -->, and i am a passionate software
-            developer. while i have a broad interest in various aspects of
-            computer science, i have developed a particular fascination with
-            compilers, language construction, and operating systems.
+            >, and i am a passionate software developer. <span class="hide-on-desktop">you'll have a better experience if you browse this on desktop</span><span class="hide-on-mobile">while i have a broad
+            interest in various aspects of computer science, i have developed a
+            particular fascination with compilers, language construction, and
+            operating systems.</span>
           </p>
-          <p>
+          <p class="hide-on-mobile">
             beyond my love for programming, i am a people person. i like meeting
             new people and collaborating on projects.
           </p>
@@ -337,6 +337,31 @@
       <ul id="blog-posts"></ul>
     </section>
 
+    <section class="explore" style="display: none">
+      <div class="explore-header">
+        <h2>let's waste some time!</h2>
+        <img src="res/explore.gif" style="width: 32px; height: 32px" />
+      </div>
+
+      <p>
+        before my time on the internet, back before search engines were even a
+        thing, people used to list links to fun or useful websites right on
+        their personal webpages. recently, i stumbled upon
+        <mark><a href="https://aaronstrick.com">Aaron Strick's website</a></mark
+        >, and he has something similar that he calls an
+        <mark><a href="https://aaronstrick.com/outbound">“outbound”</a></mark>
+        page. i want to have my own version and i call it the “explore” page
+        (just to make things more confusing, he also has an
+        <mark><a href="https://aaronstrick.com/outbound">"explore"</a></mark>
+        page, but his is more like a personal blog). on this page, i'll be
+        sharing links to things i find interesting, inspiring, fun, or just
+        stuff that feels like it belongs here. fair warning: this page probably
+        won't be as visually polished or tightly managed as the rest of the
+        site. i might end up using this as a bit of a playground, and the
+        content here will likely get updated frequently.
+      </p>
+    </section>
+
     <footer>
       <small>
         this website was written by a human, by hand, using HTML, CSS and
@@ -345,8 +370,12 @@
         were involved (while i'd like to say “no AI” the term is too broad, and
         i can't guarantee that AI wasn't involved indirectly — for example, in
         tools and libraries, or platforms used during development). there's also
-        a <mark>plain text only</mark
-        ><!-- TODO: link to website -->
+        a
+        <mark
+          ><a href="https://isakhorvath.me/tavro.github.io.pt/"
+            >plain text only</a
+          ></mark
+        >
         version available if you'd prefer to browse that.
       </small>
     </footer>

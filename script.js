@@ -146,4 +146,16 @@ function calculateAge() {
 window.addEventListener("load", () => {
   logVisitor();
   getUniqueVisitors();
+
+  const isMobile =
+    /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+
+    const hideOnDesktopElements = document.querySelectorAll('.hide-on-desktop');
+    const hideOnMobileElements = document.querySelectorAll('.hide-on-mobile');
+
+    if (isMobile) {
+      hideOnMobileElements.forEach(el => el.style.display = 'none');
+    } else {
+      hideOnDesktopElements.forEach(el => el.style.display = 'none');
+    }
 });

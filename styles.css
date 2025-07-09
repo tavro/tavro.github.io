@@ -1,3 +1,12 @@
+.explore-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.explore-header h2 {
+  padding-right: 8px;
+}
+
 .resume-intro h2 {
   margin: 0;
   padding: 0;
