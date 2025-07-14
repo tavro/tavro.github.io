@@ -92,13 +92,17 @@ nav {
   padding: 0;
 }
 
-#blog-posts {
+#blog-posts,
+#archive-list,
+.reading ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#blog-posts li {
+#blog-posts li,
+#archive-list li,
+.reading li {
   margin: 0;
   padding: 0;
 }
@@ -142,11 +146,7 @@ body {
   color: white;
 }
 
-.home,
-.resume,
-.blog,
-.now,
-.explore {
+section {
   padding-top: 96px;
 }
 
@@ -198,4 +198,134 @@ footer {
   position: absolute;
   max-width: 720px;
   bottom: 32px;
+}
+
+#archive-toggle {
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+#archive-list.collapsed {
+  display: none;
+}
+
+#archive-list {
+  margin-bottom: 16px;
+}
+
+#archive-list li,
+.reading li {
+  font-family: Verdana, Geneva, sans-serif;
+  color: black;
+  border: 2px dotted #555;
+  padding: 6px;
+  margin-bottom: 4px;
+}
+
+#archive-list a,
+.reading li a {
+  color: #6fcf6f;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(120deg, #20880c 0, #6fcf6f 37.5%, #20880c 100%);
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  text-align: center;
+}
+
+.progress-text {
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.now-playing {
+  width: 100%;
+}
+
+.now-playing p {
+  margin: 0;
+  padding: 0;
+}
+
+#music-animation {
+  display: flex;
+  gap: 4px;
+  height: 20px;
+  margin: 12px 0;
+  align-items: flex-end;
+}
+
+#music-animation span {
+  display: block;
+  width: 4px;
+  background: #20880c;
+  animation: bounce 1s infinite ease-in-out;
+  border-radius: 2px;
+}
+
+#music-animation span:nth-child(1) {
+  animation-delay: 0s;
+}
+#music-animation span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+#music-animation span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+#music-animation span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+#music-animation span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    height: 4px;
+  }
+  50% {
+    height: 20px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid white;
+}
+
+th,
+td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.using h3 {
+  color: #20880c;
 }

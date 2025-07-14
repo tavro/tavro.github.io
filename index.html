@@ -15,12 +15,18 @@
           <li><a id="home" href="#" class="active">&lt;home/&gt;</a></li>
           <li><a id="resume" href="#">/resume</a></li>
           <li><a id="blog" href="#">/blog</a></li>
+          <!-- TODO:
+          <li><a id="now" href="#">/now</a></li>
+          <li><a id="using" href="#">/using</a></li>
+          -->
+          <li><a id="reading" href="#">/reading</a></li>
           <li><a id="explore" href="#">/explore</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="home">
+      <!-- TODO: skeleton effect while javascript is running -->
       <h2>hey, i'm tyson!</h2>
       <div class="about-wrapper">
         <img src="res/profile.jpg" alt="profile" />
@@ -35,15 +41,7 @@
               "
               >(?)</a
             >
-            horvath<a
-              href="https://github.com/tavro/blog-posts/blob/main/the-origin-of-my-names.md"
-              style="
-                font-size: 10px;
-                vertical-align: super;
-                text-decoration: none;
-              "
-              >(?)</a
-            >, and i am a passionate software developer.
+            horvath, and i am a passionate software developer.
             <span class="hide-on-desktop"
               >you'll have a better experience if you browse this on
               desktop</span
@@ -77,10 +75,14 @@
           living in sweden. i have a master's degree in computer science and i
           am currently employed for
           <mark><a href="https://www.opera.com">Opera Software</a></mark
-          >, the browser company. func fact, i wrote
-          <mark>my first program</mark
-          ><!-- TODO: connect to blog post -->
-          in 2012, when i was only 12 years old! :-)
+          >, the browser company. fun fact, i wrote
+          <mark
+            ><a
+              href="https://github.com/tavro/blog-posts/blob/main/the-story-of-how-i-started-to-write-code.md"
+              >my first program</a
+            ></mark
+          >
+          in 2011, when i was only 11 years old! :-)
         </p>
         <p>
           if you are interested in seeing a more detailed list of my previous
@@ -342,6 +344,92 @@
       <ul id="blog-posts"></ul>
     </section>
 
+    <section class="reading" style="display: none">
+      <h2>reading 📚</h2>
+      <p>
+        although i don't spend as much time reading as i'd like, i really enjoy
+        it. this section is dedicated to the books i've read. thank you to
+        <mark><a href="https://encapsulate.me/reading">Justin Higgins</a></mark>
+        for inspiring me to create this page. i plan to eventually expand it to
+        include full-fledged reviews, as well as more books i've read in the
+        past.
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.ronpadgett.com/BigCabin.htm">★★★★★ big cabin</a>
+          <small>by ron padgett</small>
+        </li>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools"
+            >★★★★★ "the dragon book"</a
+          >
+        </li>
+        <li>
+          <a href="https://interpreterbook.com/"
+            >★★★★★ writing an interpreter in go</a
+          >
+          <small>by thorsten ball</small>
+        </li>
+        <li>
+          <a href="https://bookmarkforlag.se/bocker/brann-alla-mina-brev/"
+            >★★★★☆ bränn alla mina brev</a
+          >
+          <small>by alex schulman</small>
+        </li>
+        <li>
+          <a
+            href="https://www.google.se/books/edition/Bara_jag_vet_vem_jag_%C3%A4r/2foJDAAAQBAJ?hl=sv&gbpv=0"
+            >★★★★☆ bara jag vet vem jag är</a
+          >
+          <small>by sture bergwall</small>
+        </li>
+        <li>
+          <a
+            href="https://www.google.se/books/edition/Peter_R%C3%A4tz_nio_%C3%A5r_som_undercoveragent/mLK8BgAAQBAJ?hl=sv&gbpv=0"
+            >★★★★☆ peter rätz</a
+          >
+          <small>by dick sundvall</small>
+        </li>
+        <li>
+          <a
+            href="https://www.google.se/books/edition/1984/Jcb8EAAAQBAJ?hl=sv&gbpv=0"
+            >★★★★☆ 1984</a
+          >
+          <small>by george orwell</small>
+        </li>
+        <li>
+          <a
+            href="https://www.bokus.com/bok/9789175791616/vafan-var-det-som-hande/?srsltid=AfmBOopAu3Ycw4lex6XBzJZb_zKhla4QANsJigzwBQ4gNMymFVQILBJW"
+            >★★★☆☆ vafan var det som hände?</a
+          >
+          <small>by clark olofsson</small>
+        </li>
+        <li>
+          <a
+            href="https://www.google.se/books/edition/Hundra%C3%A5ringen_som_klev_ut_genom_f%C3%B6nstr/6ByZAwAAQBAJ?hl=sv&gbpv=0"
+            >★★★☆☆ hundraåringen</a
+          >
+          <small>by jonas jonasson</small>
+        </li>
+        <li>
+          <a
+            href="https://www.google.se/books/edition/D%C3%B6dssynden/qHowCgAAQBAJ?hl=sv&gbpv=0"
+            >★★★☆☆ to kill a mockingbird</a
+          >
+          <small>by harper lee</small>
+        </li>
+        <li>
+          <a
+            href="https://www.google.se/books/edition/Livets_sm%C3%A5_njutningar/aEX2DwAAQBAJ?hl=sv&gbpv=0"
+            >★★★☆☆ livets små njutningar</a
+          >
+          <small>by sigge eklund</small>
+        </li>
+      </ul>
+      <small>these are the books i've rated as of summer 2024</small>
+    </section>
+
     <section class="explore" style="display: none">
       <div class="explore-header">
         <h2>let's waste some time!</h2>
@@ -372,7 +460,8 @@
         this website was written by a human, by hand, using HTML, CSS and
         JavaScript.
         <mark
-          ><a href="https://github.com/tavro/blog-posts/blob/main/why-i-distanciated-myself-from-llms.md"
+          ><a
+            href="https://github.com/tavro/blog-posts/blob/main/why-i-distanciated-myself-from-llms.md"
             >no large language models</a
           ></mark
         >

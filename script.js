@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /*
+  document
+    .getElementById("archive-toggle")
+    .addEventListener("click", function () {
+      const list = document.getElementById("archive-list");
+      const isVisible = list.style.display === "block";
+      list.style.display = isVisible ? "none" : "block";
+
+      this.textContent = isVisible
+        ? "‣ see what i have been up to previously"
+        : "▾ see what i have been up to previously";
+    });
+  */
+
   const navLinks = document.querySelectorAll("nav ul li a");
   const sections = document.querySelectorAll("section");
 
@@ -150,12 +164,12 @@ window.addEventListener("load", () => {
   const isMobile =
     /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
 
-    const hideOnDesktopElements = document.querySelectorAll('.hide-on-desktop');
-    const hideOnMobileElements = document.querySelectorAll('.hide-on-mobile');
+  const hideOnDesktopElements = document.querySelectorAll(".hide-on-desktop");
+  const hideOnMobileElements = document.querySelectorAll(".hide-on-mobile");
 
-    if (isMobile) {
-      hideOnMobileElements.forEach(el => el.style.display = 'none');
-    } else {
-      hideOnDesktopElements.forEach(el => el.style.display = 'none');
-    }
+  if (isMobile) {
+    hideOnMobileElements.forEach((el) => (el.style.display = "none"));
+  } else {
+    hideOnDesktopElements.forEach((el) => (el.style.display = "none"));
+  }
 });
