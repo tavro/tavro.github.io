@@ -1,3 +1,24 @@
+.now h2 {
+  margin-top: 16px;
+}
+
+.book-section {
+  margin-top: 16px;
+}
+
+#life-section,
+.book-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#life-section p,
+.book-section p {
+  margin: 0;
+  margin-left: 16px;
+  padding: 0;
+}
+
 .explore-header {
   display: flex;
   flex-direction: row;
@@ -148,6 +169,7 @@ body {
 
 section {
   padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .resume-header {
@@ -240,6 +262,9 @@ footer {
 }
 
 .progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   background: linear-gradient(120deg, #20880c 0, #6fcf6f 37.5%, #20880c 100%);
   width: 0%;
