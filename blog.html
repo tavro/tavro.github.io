@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>tyson horvath - blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="res/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts/common.js"></script>
+    <script src="scripts/blog.js"></script>
+  </head>
+  <body class="dark-mode">
+    <header class="">
+      <!-- TODO: alternative header, inspired by https://bjhess.com/ -->
+      <h1>th@tavro:~/$ <span class="header-cursor"></span></h1>
+      <nav>
+        <ul>
+          <li><a id="home" href="index.html">/home</a></li>
+          <li><a id="resume" href="resume.html">/resume</a></li>
+          <li><a id="blog" href="#" class="active">&lt;blog/&gt;</a></li>
+          <li><a id="now" href="now.html">/now</a></li>
+          <li><a id="explore" href="explore.html">/explore</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="blog">
+      <h2>blog posts</h2>
+      <p>
+        for now, these entries link to the original .md files. eventually, i
+        plan to display them in a cleaner format directly on my website, similar
+        to how i did on my old blog.
+      </p>
+      <ul id="blog-posts"></ul>
+    </section>
+  </body>
+</html>
