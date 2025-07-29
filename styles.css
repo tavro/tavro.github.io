@@ -210,6 +210,15 @@ h2 {
   color: transparent;
 }
 
+.prompt {
+  background: none;
+  background-clip: unset;
+  color: white;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white;
+  font-size: 24px;
+}
+
 h2 {
   margin: 0;
   margin-bottom: 16px;

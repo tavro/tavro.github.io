@@ -19,4 +19,25 @@ async function logVisitor() {
 
 document.addEventListener("DOMContentLoaded", () => {
   logVisitor();
+
+  const prompts = document.querySelectorAll("span.prompt");
+
+  prompts.forEach(span => {
+    span.style.color = "white";
+    const fullText = span.textContent;
+    span.textContent = "";
+
+    let index = 0;
+    const speed = 50;
+
+    function type() {
+      if (index < fullText.length) {
+        span.textContent += fullText.charAt(index);
+        index++;
+        setTimeout(type, speed);
+      }
+    }
+
+    type();
+  });
 });
