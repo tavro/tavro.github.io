@@ -12,7 +12,10 @@
   <body class="dark-mode">
     <header class="">
       <!-- TODO: alternative header, inspired by https://bjhess.com/ -->
-      <h1>th@tavro:~/$ <span class="prompt">cat ~/resume.txt</span><span class="header-cursor"></span></h1>
+      <h1>
+        th@tavro:~/$ <span class="prompt">cat ~/resume.txt</span
+        ><span class="header-cursor"></span>
+      </h1>
       <nav>
         <ul>
           <li><a id="home" href="index.html">/home</a></li>
@@ -25,25 +28,38 @@
     </header>
 
     <section class="resume">
+      <div class="slider-container">
+        <p class="slider-label">How much do you want to know?</p>
+        <input type="range" id="info-slider" min="1" max="4" value="4" />
+      </div>
+      <br/>
+      <br/>
       <div class="resume-intro">
         <h2>tyson horvath</h2>
         <!-- TODO: print button -->
         <small><span id="email"></span>@gmail.com</small>
+
         <p>
           i am a <span id="age"></span> year-old software developer, currently
-          living in sweden. i have a master's degree in computer science and i
-          am currently employed for
-          <mark><a href="https://www.opera.com">Opera Software</a></mark
-          >, the browser company. fun fact, i wrote
-          <mark
-            ><a
-              href="https://github.com/tavro/blog-posts/blob/main/the-story-of-how-i-started-to-write-code.md"
-              >my first program</a
-            ></mark
+          living in sweden.
+          <span class="info-2"
+            >i have a master's degree in computer science and i am currently
+            employed for
+            <mark><a href="https://www.opera.com">Opera Software</a></mark
+            >, the browser company.</span
           >
-          in 2011, when i was only 11 years old! :-)
+          <span class="info-3"
+            >fun fact, i wrote
+            <mark
+              ><a
+                href="https://github.com/tavro/blog-posts/blob/main/the-story-of-how-i-started-to-write-code.md"
+                >my first program</a
+              ></mark
+            >
+            in 2011, when i was only 11 years old! :-)</span
+          >
         </p>
-        <p>
+        <p class="info-4">
           if you are interested in seeing a more detailed list of my previous
           work experiences, check out my
           <mark
@@ -57,60 +73,58 @@
       </div>
       <h2 class="resume-header">here is some of my work experiences</h2>
       <h3>@ Opera Sweden AB</h3>
-      <p>
+      <p class="info-4">
         Opera is a global internet brand with a user base of approximately 300
         million average monthly active users.
       </p>
       <hr />
       <div>
         <p>
-          <b><span class="gray">2025 |</span> Kotlin Multiplatform Developer </b
-          ><span class="gray hidable">@ MiniPay</span>
+          <b><span class="gray">2025 |</span></b> Kotlin Multiplatform Developer
+          <span class="gray info-2">@ MiniPay</span>
         </p>
-        <small
+        <small class="info-3"
           >building the client for a stablecoin-based, non-custodial wallet that
           enables instant, phone number-based transactions.</small
         >
       </div>
       <div>
         <p>
-          <b
-            ><span class="gray">2024 |</span> gRCP API Platform (Master Thesis) </b
-          ><span class="gray hidable">@ MiniPay</span>
+          <b><span class="gray">2024 |</span></b> gRCP API Platform (Master
+          Thesis) <span class="gray info-2">@ MiniPay</span>
         </p>
-        <small
+        <small class="info-3"
           >development of a platform for interaction with gRPC services outside
           of traditional development environments.</small
         >
       </div>
       <div>
         <p>
-          <b
-            ><span class="gray">2023 |</span> Crypto Browser Developer (Intern) </b
-          ><span class="gray hidable">@ Crypto</span>
+          <b><span class="gray">2023 |</span></b> Crypto Browser Developer
+          (Intern) <span class="gray info-2">@ Crypto</span>
         </p>
-        <small
+        <small class="info-3"
           >contributed to the development of Opera's crypto wallet using Vue.js
           and TypeScript.</small
         >
       </div>
       <div>
         <p>
-          <b><span class="gray">2022 |</span> Student Ambassador</b>
+          <b><span class="gray">2022 |</span></b> Student Ambassador
         </p>
       </div>
       <div>
         <p>
-          <b><span class="gray">2022 |</span> DIRE Developer (Intern) </b
-          ><span class="gray hidable">@ OfA</span>
+          <b><span class="gray">2022 |</span></b> DIRE Developer (Intern)
+          <span class="gray info-2">@ OfA</span>
         </p>
-        <small
+        <small class="info-3"
           >enhanced and maintained a remote testing environment for mobile
           software.</small
         >
       </div>
       <h3>@ Linköpings University</h3>
-      <p>
+      <p class="info-4">
         LiU is a public research university based in linköping and is one of
         sweden's largest academic institutions.
       </p>
@@ -118,69 +132,90 @@
       <h4>IDA (Teacher, Lecturer & Laboratory Assistant)</h4>
       <p>
         <b class="gray">2023 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDDI82">TDDI82</a></mark
-        >, Object Oriented Problem Solving <span class="gray">@ UPP</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDDI82">TDDI82,</a></mark
+        >
+        Object Oriented Problem Solving <span class="gray info-2">@ UPP</span>
       </p>
       <p>
         <b class="gray">2023 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDDI83">TDDI83</a></mark
-        >, Professionalism for Engineers <span class="gray">@ UPP</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDDI83">TDDI83,</a></mark
+        >
+        Professionalism for Engineers <span class="gray info-2">@ UPP</span>
       </p>
       <p>
         <b class="gray">2022 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDDE10">TDDE10</a></mark
-        >, OO-programming & Java <span class="gray">@ UPP</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDDE10">TDDE10,</a></mark
+        >
+        OO-programming & Java <span class="gray info-2">@ UPP</span>
       </p>
       <p>
         <b class="gray">2022 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDP005">TDP005</a></mark
-        >, Project: Object Oriented System <span class="gray">@ UPP</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDP005">TDP005,</a></mark
+        >
+        Project: Object Oriented System <span class="gray info-2">@ UPP</span>
       </p>
       <p>
         <b class="gray">2022 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDP004">TDP004</a></mark
-        >, OO-programming & C++ <span class="gray">@ UPP</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDP004">TDP004,</a></mark
+        >
+        OO-programming & C++ <span class="gray info-2">@ UPP</span>
       </p>
       <p>
         <b class="gray">2022 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDDI16">TDDI16</a></mark
-        >, Datastructures & Algorithms <span class="gray">@ UPP</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDDI16">TDDI16,</a></mark
+        >
+        Datastructures & Algorithms <span class="gray info-2">@ UPP</span>
       </p>
       <p>
         <b class="gray">2022 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDDD78">TDDD78</a></mark
-        >, OO-programming & Java <span class="gray">@ SaS</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDDD78">TDDD78,</a></mark
+        >
+        OO-programming & Java <span class="gray info-2">@ SaS</span>
       </p>
       <p>
         <b class="gray">2021 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDDE24">TDDE24</a></mark
-        >, Functional & Imperative programming <span class="gray">@ SaS</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDDE24">TDDE24,</a></mark
+        >
+        Functional & Imperative programming
+        <span class="gray info-2">@ SaS</span>
       </p>
       <p>
         <b class="gray">2021 |</b>
-        <mark><a href="https://studieinfo.liu.se/kurs/TDDE23">TDDE23</a></mark
-        >, Functional & Imperative programming <span class="gray">@ SaS</span>
+        <mark class="info-2"
+          ><a href="https://studieinfo.liu.se/kurs/TDDE23">TDDE23,</a></mark
+        >
+        Functional & Imperative programming
+        <span class="gray info-2">@ SaS</span>
       </p>
       <h2 class="resume-header">
         i have also been involved in some organizations
       </h2>
       <h3>@ LiTHe Hax</h3>
-      <p>
+      <p class="info-4">
         LiTHe Hax is an ethical hacking association, founded by me in march 2024
         to promote cybersecurity skills by organizing and participating in
         hacking competitions.
       </p>
       <hr />
       <div>
-        <p>
+        <p class="info-2">
           <b class="gray">2025 |</b> Chairman
           <span class="gray">@ CTF Commitee</span>
         </p>
         <p>
-          <b class="gray">2025 |</b> Chairman <span class="gray">@ Board</span>
+          <b class="gray">2025 |</b> Chairman
+          <span class="gray info-2">@ Board</span>
         </p>
         <p><b class="gray">2024 |</b> Founder, Chairman</p>
-        <small
+        <small class="info-3"
           >there is much to share, but in brief, i recruited and led a team to
           organize hacking-related activities. in our first year, we grew to
           around 80 members and secured sponsorships from multiple
@@ -189,7 +224,7 @@
       </div>
 
       <h3>@ LinTek</h3>
-      <p>
+      <p class="info-4">
         Linköpings Teknologers Studentkår is the official student union for
         science and engineering students at Linköping University.
       </p>
@@ -197,13 +232,13 @@
       <div>
         <p>
           <b class="gray">2025 |</b> Editor in Chief
-          <span class="gray">@ LiTHanian</span>
+          <span class="gray info-2">@ LiTHanian</span>
         </p>
         <p>
           <b class="gray">2024 |</b> Editor in Chief
-          <span class="gray">@ LiTHanian</span>
+          <span class="gray info-2">@ LiTHanian</span>
         </p>
-        <small
+        <small class="info-3"
           >led a team of eleven in producing four magazines (each around 40
           pages), handling everything from recruiting and planning to writing,
           illustrating, photography and more.</small
@@ -211,7 +246,7 @@
       </div>
 
       <h3>@ Matematiska- Naturvetenskapliga sektionen</h3>
-      <p>
+      <p class="info-4">
         MatNat-sektionen is the student section at Linköping University for
         students studying biology, chemistry, physics, mathematics and related
         programs.
@@ -220,9 +255,9 @@
       <div>
         <p>
           <b class="gray">2023 |</b> Chairman, Webmaster
-          <span class="gray">@ Gudfadderiet</span>
+          <span class="gray info-2">@ Gudfadderiet</span>
         </p>
-        <small
+        <small class="info-3"
           >led a team of eleven in planning and organizing the reception period
           for new students at MatNat-sektionen. also developed and maintained
           their website using React.</small
@@ -230,26 +265,27 @@
       </div>
 
       <h3>@ Datateknologsektionen</h3>
-      <p>
+      <p class="info-4">
         D-sektionen is the student section at Linköping University for students
         in computer science.
       </p>
       <hr />
       <div>
         <p><b class="gray">2024 |</b> Accountant</p>
-        <small
+        <small class="info-3"
           >reviewed the organization's internal processes and activities to
           ensure everything was running smoothly and according to rules.</small
         >
       </div>
       <div>
         <p>
-          <b class="gray">2022 |</b> Webmaster <span class="gray">@ WebbU</span>
+          <b class="gray">2022 |</b> Webmaster
+          <span class="gray info-2">@ WebbU</span>
         </p>
-        <p>
+        <p class="info-2">
           <b class="gray">2021 |</b> Webmaster <span class="gray">@ WebbU</span>
         </p>
-        <small
+        <small class="info-4"
           >lead a group of nine people in developing and maintaining several
           websites, services and projects used by students at Linköpings
           University.</small
@@ -258,9 +294,9 @@
       <div>
         <p>
           <b class="gray">2021 |</b> Webmaster
-          <span class="gray">@ STABEN</span>
+          <span class="gray info-2">@ STABEN</span>
         </p>
-        <small
+        <small class="info-3"
           >developed and maintained a React-based website to provide information
           and guidance for students participating in the reception period at
           Linköping University.</small
@@ -268,7 +304,7 @@
       </div>
 
       <h3>@ Formula Student</h3>
-      <p>
+      <p class="info-4">
         Formula Student is an international engineering design organization and
         competition where university students design, build and race a small
         formula-style race car
@@ -277,16 +313,16 @@
       <div>
         <p>
           <b class="gray">2021 |</b> Software Engineer
-          <span class="gray">@ Driverless</span>
+          <span class="gray info-2">@ Driverless</span>
         </p>
-        <small
+        <small class="info-3"
           >wrote and maintained C++ and Python code for a self-driving car using
           ROS.</small
         >
       </div>
       <div>
         <p><b class="gray">2021 |</b> Server Manager</p>
-        <small
+        <small class="info-3"
           >managed and maintained the Linux-based server hosting the Formula
           Student website and related services.</small
         >

@@ -363,3 +363,55 @@ th {
 .using h3 {
   color: #20880c;
 }
+
+.favorites div {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.favorites img {
+  min-width: 128px;
+}
+
+.slider-container {
+  background-color: #111;
+  border-radius: 0.75rem;
+  color: #555;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 300px;
+}
+
+.slider-label {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #222;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #20880c;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #20880c;
+  border: none;
+  cursor: pointer;
+}
