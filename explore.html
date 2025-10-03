@@ -12,7 +12,10 @@
   <body class="dark-mode">
     <header class="">
       <!-- TODO: alternative header, inspired by https://bjhess.com/ -->
-      <h1>th@tavro:~/$ <span class="prompt">stat -c '%Y %n' ~/*</span><span class="header-cursor"></span></h1>
+      <h1>
+        th@tavro:~/$ <span class="prompt">stat -c '%Y %n' ~/*</span
+        ><span class="header-cursor"></span>
+      </h1>
       <nav>
         <ul>
           <li><a id="explore" href="#" class="active">&lt;explore/&gt;</a></li>
@@ -21,7 +24,7 @@
       </nav>
       <nav>
         <ul>
-          <li><span style="color:#6fcf6f;">└</span></li>
+          <li><span style="color: #6fcf6f">└</span></li>
           <li><a id="using" href="using.html">/using</a></li>
           <li><a id="reading" href="reading.html">/reading</a></li>
           <li><a id="favorites" href="favorites.html">/favorites</a></li>
@@ -54,14 +57,41 @@
       </p>
 
       <div id="timeline">
-        <h1>WIP</h1>
+        <h1>The history of web browsers (WIP)</h1>
         <div class="timeline-section">
           <div id="year-slider" class="slider" tabindex="0"></div>
         </div>
         <div class="events-section">
           <div id="event-slider-container">
-            <div id="event-slider" class="slider event-slider" tabindex="0"></div>
+            <div
+              id="event-slider"
+              class="slider event-slider"
+              tabindex="0"
+            ></div>
           </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <h2>WorldWideWeb</h2>
+            <p>
+              WorldWideWeb was the first web browser (or browser-editor rather),
+              when it was written in 1990 (dated 901225 although it was finished
+              some time before that) it was the only way to see the web. it was
+              renamed Nexus in order avoid confusion between the program and the
+              abstract information space (now known as World Wide Web). it would
+              browse http: space and news: and ftp: spaces and local file: space,
+              but edit only in file: space as HTTP PUT was not implemented back
+              then.
+            </p>
+            <p>
+              the program was written using a NeXT computer in objective-c. it had
+              the advantage that there were some great tools available. in fact,
+              you could do in a couple of months what would take more like a year
+              on other platforms. for instance, there was an application builder
+              to make all the menus as quickly as you could dream them up.
+            </p>
+          </div>
+          <!-- TODO: Dictionary -->
         </div>
       </div>
     </section>

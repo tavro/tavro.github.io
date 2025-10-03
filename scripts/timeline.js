@@ -3,8 +3,8 @@ const timelineData = [
     year: 1990,
     events: [
       {
-        title: "Event 1",
-        desc: "Event description 1",
+        title: "WorldWideWeb",
+        desc: "the first web browser",
       },
       {
         title: "Event 2",
