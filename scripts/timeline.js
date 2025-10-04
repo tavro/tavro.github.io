@@ -5,10 +5,12 @@ const timelineData = [
       {
         title: "WorldWideWeb",
         desc: "the first web browser",
+        body: "<p>WorldWideWeb was the first web browser (or browser-editor rather), when it was written in 1990 (dated 901225 although it was finished some time before that) it was the only way to see the web. it was renamed Nexus in order avoid confusion between the program and the abstract information space (now known as World Wide Web). it would browse http: space and news: and ftp: spaces and local file: space, but edit only in file: space as HTTP PUT was not implemented back then.</p><p>the program was written using a NeXT computer in objective-c. it had the advantage that there were some great tools available. in fact, you could do in a couple of months what would take more like a year on other platforms. for instance, there was an application builder to make all the menus as quickly as you could dream them up.</p>",
       },
       {
         title: "Event 2",
         desc: "Event description 2",
+        body: "",
       },
     ],
   },
@@ -18,6 +20,7 @@ const timelineData = [
       {
         title: "Event 3",
         desc: "Event description 3",
+        body: "",
       },
     ],
   },
@@ -26,6 +29,9 @@ const timelineData = [
 const yearSlider = document.getElementById("year-slider");
 const eventSliderContainer = document.getElementById("event-slider-container");
 const eventSlider = document.getElementById("event-slider");
+
+const contentHeading = document.getElementById("timeline-content-heading");
+const contentBody = document.getElementById("timeline-content-body");
 
 let selectedYearIndex = 0;
 let selectedEventIndex = 0;
@@ -69,11 +75,21 @@ function createEventCards(yearIdx) {
   });
 }
 
+function updateTimelineContent() {
+    const events = timelineData[selectedYearIndex].events;
+    const selectedEvent = events[selectedEventIndex];
+    contentHeading.innerHTML = selectedEvent.title;
+    contentBody.innerHTML = selectedEvent.body;
+}
+
 function selectYear(idx) {
   if (idx < 0 || idx >= timelineData.length) return;
   if (selectedYearIndex !== idx) {
     selectedYearIndex = idx;
     selectedEventIndex = 0;
+
+    updateTimelineContent();
+
     updateYearSlider();
     fadeOutInEvents();
   }
@@ -84,6 +100,9 @@ function selectEvent(idx) {
   if (idx < 0 || idx >= events.length) return;
   if (selectedEventIndex !== idx) {
     selectedEventIndex = idx;
+
+    updateTimelineContent();
+
     updateEventSlider();
   }
 }
