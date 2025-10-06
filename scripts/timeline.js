@@ -1,5 +1,110 @@
 const timelineData = [
   {
+    year: 1945,
+    events: [
+      {
+        title: "memex",
+        desc: "interacting with microform",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1965,
+    events: [
+      {
+        title: "hypertext/hypermedia",
+        desc: "Ted Nelson coins terms",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1967,
+    events: [
+      {
+        title: "Hypertext Editing System",
+        desc: "the first hypertext system",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1968,
+    events: [
+      {
+        title: "NLS system",
+        desc: "a computer collaboration system",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1975,
+    events: [
+      {
+        title: "ZOG",
+        desc: "the front end for AI",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1978,
+    events: [
+      {
+        title: "Aspen Movie Map",
+        desc: "virtual tour through aspen",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1984,
+    events: [
+      {
+        title: "Filevision",
+        desc: "information in pictures",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1985,
+    events: [
+      {
+        title: "Symbolics Document Examiner",
+        desc: "introducing bookmarks",
+        body: "",
+      },
+      {
+        title: "intermedia",
+        desc: "the third notable hypertext project",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1986,
+    events: [
+      {
+        title: "Guide",
+        desc: "a missed opportunity",
+        body: "",
+      },
+    ],
+  },
+  {
+    year: 1987,
+    events: [
+      {
+        title: "HyperCard",
+        desc: "a software erector set",
+        body: "",
+      },
+    ],
+  },
+  {
     year: 1990,
     events: [
       {
