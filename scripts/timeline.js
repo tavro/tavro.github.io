@@ -5,7 +5,7 @@ const timelineData = [
       {
         title: "memex",
         desc: "interacting with microform",
-        body: "",
+        body: "<p>in \"As We May Think\", an essay by Vannevar Bush which, to some extent, predicted many kinds of technologies invented after its publication (including hypertext, personal computers and the World Wide Web). the essay describes a memex as an electromechanical device enabling individuals to develop and read a large self-contained research library, create and follow associative trails of links and personal annotations, and recall these trails at any time to share them with other researchers.</p>",
       },
     ],
   },
@@ -15,7 +15,7 @@ const timelineData = [
       {
         title: "hypertext/hypermedia",
         desc: "Ted Nelson coins terms",
-        body: "",
+        body: "<p>when describing the Evolutionary List File in \“Complex information processing: a file structure for the complex, the changing and the indeterminate\” Ted Nelson coined the terms hypertext and hypermedia:</p><p><blockquote>Let me introduce the word \"hypertext\" to mean a body of written or pictorial material interconnected in such a complex way that it could not conveniently be presented or represented on paper. It may contain summaries, or maps of its contents and their interrelations; it may contain annotations, additions and footnotes from scholars who have examined it. Let me suggest that such an object and system, properly designed and administered, could have great potential for education, increasing the student's range of choices, his sense of freedom, his motivation, and his intellectual grasp. Such a system could grow indefinitely, gradually including more and more of the world's written knowledge. However, its internal file structure would have to be built to accept growth, change and complex informational arrangements.</blockquote></p><p><blockquote>Films, sound recordings, and video recordings are also linear strings, basically for mechanical reasons. But these, too, can now be arranged as non-linear systems-- for instance, lattices-- for editing purposes, or for display with different emphasis. The hyperfilm-- a browsable or vari-sequenced movie-- is only one of the possible hypermedia that require our attention.</blockquote></p>",
       },
     ],
   },
