@@ -40,7 +40,7 @@ const timelineData = [
       {
         title: "NLS system",
         desc: "a computer collaboration system",
-        body: "",
+        body: "the oN-Line System was the first computer system to employ the practical use of hypertext links, a computer mouse, raster-scan video monitors, information organized by relevance, screen windowing, presentation programs and other modern computing concepts.",
       },
     ],
   },
@@ -50,7 +50,7 @@ const timelineData = [
       {
         title: "ZOG",
         desc: "the front end for AI",
-        body: "",
+        body: "ZOG was an early hypertext system. it consisted of \"frames\" that contained a title, a description, a line containing system commands and selections (menu items) that led to other frames. ZOG pioneered the \"frame\" or \"card\" model of hypertext. in such systems, the frames or cards cannot scroll to show content that is part of the same document but held offscreen. instead, text that exceeds the capacity of one screen must be placed in another.",
       },
     ],
   },
@@ -60,7 +60,7 @@ const timelineData = [
       {
         title: "Aspen Movie Map",
         desc: "virtual tour through aspen",
-        body: "",
+        body: "the Aspen Movie Map was an early example of a hypermedia system that enabled the user to take a virtual tour through the city of Aspen, Colorado. the interaction was controlled through a dynamically generated menu overlaid on top of a video image. commands were sent from the client process handling the user input and overlay graphics to a server that accessed the database and controlled the laserdisc players. another interface feature was the ability to touch any building in the current field of view, and, in a manner similar to the image map feature of web browsers, jump to a facade of that building. selected buildings contained additional data like interior shots, historical images, menus of restaurants etc.",
       },
     ],
   },
