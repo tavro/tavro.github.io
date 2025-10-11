@@ -25,7 +25,7 @@ const timelineData = [
       {
         title: "Hypertext Editing System",
         desc: "the first hypertext system",
-        body: "the Hypertext Editing System was the first hypertext system available on commercial equipment that novices could use. the system organized data into two main types: links and branching text. the branching text could automatically be arranged into menus, and a point within a given area could also have an assigned name, called a label and be accessed later by that name from the screen. it required an IBM 2250 display console. the project was replaced by the File Retrieval and Editing System project around 1969. ted nelson, one of the developers of the system, claims credit for inventing the “back/undo” button with regard to hypertext, as the Hypertext Editing System was the first system that contained one.",
+        body: "<p>the Hypertext Editing System was the first hypertext system available on commercial equipment that novices could use. the system organized data into two main types: links and branching text. the branching text could automatically be arranged into menus, and a point within a given area could also have an assigned name, called a label and be accessed later by that name from the screen. it required an IBM 2250 display console. the project was replaced by the File Retrieval and Editing System project around 1969. ted nelson, one of the developers of the system, claims credit for inventing the “back/undo” button with regard to hypertext, as the Hypertext Editing System was the first system that contained one.</p>",
       },
     ],
   },
@@ -35,12 +35,12 @@ const timelineData = [
       {
         title: "FRESS",
         desc: "including a virtual terminal interface",
-        body: "the File Retrieval and Editing SyStem was the first hypertext system to run on readily available commercial hardware and OS. it was a continuation of work done on the hypertext editing system. it ran on an IBM 360-series mainframe running VM/CMS. it implemented one of the first virtual terminal interfaces, in order to provide device-independence. it could run on various terminals from dumb typewriters up to the Imlac PDS-1 graphical minicomputer. the system allowed multiple users to collaborate on a set of documents, which could be of arbitrary size. its users could insert a marker at any location within a text document and link the marked selection to any other point, either in the same document or a different document. this was much like the World Wide Web of today, but without the need for the anchor hyperlinks that HTML requires. links were also bi-directional, unlike in today's web. it had two types of links: tags and \"jumps\". tags were links to information such as references or footnotes, while \"jumps\" were links that could take the user through many separate but related documents. it was probably the first hypertext system used in education.",
+        body: "<p>the File Retrieval and Editing SyStem was the first hypertext system to run on readily available commercial hardware and OS. it was a continuation of work done on the hypertext editing system. it ran on an IBM 360-series mainframe running VM/CMS. it implemented one of the first virtual terminal interfaces, in order to provide device-independence. it could run on various terminals from dumb typewriters up to the Imlac PDS-1 graphical minicomputer. the system allowed multiple users to collaborate on a set of documents, which could be of arbitrary size. its users could insert a marker at any location within a text document and link the marked selection to any other point, either in the same document or a different document. this was much like the World Wide Web of today, but without the need for the anchor hyperlinks that HTML requires. links were also bi-directional, unlike in today's web. it had two types of links: tags and \"jumps\". tags were links to information such as references or footnotes, while \"jumps\" were links that could take the user through many separate but related documents. it was probably the first hypertext system used in education.</p>",
       },
       {
         title: "NLS system",
         desc: "a computer collaboration system",
-        body: "the oN-Line System was the first computer system to employ the practical use of hypertext links, a computer mouse, raster-scan video monitors, information organized by relevance, screen windowing, presentation programs and other modern computing concepts.",
+        body: "<p>the oN-Line System was the first computer system to employ the practical use of hypertext links, a computer mouse, raster-scan video monitors, information organized by relevance, screen windowing, presentation programs and other modern computing concepts.</p>",
       },
     ],
   },
@@ -50,7 +50,7 @@ const timelineData = [
       {
         title: "ZOG",
         desc: "the front end for AI",
-        body: "ZOG was an early hypertext system. it consisted of \"frames\" that contained a title, a description, a line containing system commands and selections (menu items) that led to other frames. ZOG pioneered the \"frame\" or \"card\" model of hypertext. in such systems, the frames or cards cannot scroll to show content that is part of the same document but held offscreen. instead, text that exceeds the capacity of one screen must be placed in another.",
+        body: "<p>ZOG was an early hypertext system. it consisted of \"frames\" that contained a title, a description, a line containing system commands and selections (menu items) that led to other frames. ZOG pioneered the \"frame\" or \"card\" model of hypertext. in such systems, the frames or cards cannot scroll to show content that is part of the same document but held offscreen. instead, text that exceeds the capacity of one screen must be placed in another.</p>",
       },
     ],
   },
@@ -60,7 +60,7 @@ const timelineData = [
       {
         title: "Aspen Movie Map",
         desc: "virtual tour through aspen",
-        body: "the Aspen Movie Map was an early example of a hypermedia system that enabled the user to take a virtual tour through the city of Aspen, Colorado. the interaction was controlled through a dynamically generated menu overlaid on top of a video image. commands were sent from the client process handling the user input and overlay graphics to a server that accessed the database and controlled the laserdisc players. another interface feature was the ability to touch any building in the current field of view, and, in a manner similar to the image map feature of web browsers, jump to a facade of that building. selected buildings contained additional data like interior shots, historical images, menus of restaurants etc.",
+        body: "<p>the Aspen Movie Map was an early example of a hypermedia system that enabled the user to take a virtual tour through the city of Aspen, Colorado. the interaction was controlled through a dynamically generated menu overlaid on top of a video image. commands were sent from the client process handling the user input and overlay graphics to a server that accessed the database and controlled the laserdisc players. another interface feature was the ability to touch any building in the current field of view, and, in a manner similar to the image map feature of web browsers, jump to a facade of that building. selected buildings contained additional data like interior shots, historical images, menus of restaurants etc.</p>",
       },
     ],
   },
