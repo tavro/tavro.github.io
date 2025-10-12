@@ -70,7 +70,7 @@ const timelineData = [
       {
         title: "Filevision",
         desc: "information in pictures",
-        body: "",
+        body: "<p>Filevision was a visual filing software developed for the Machintosh, which let you deal with information in pictures, numbers and words.</p>",
       },
     ],
   },
@@ -80,12 +80,12 @@ const timelineData = [
       {
         title: "Symbolics Document Examiner",
         desc: "introducing bookmarks",
-        body: "",
+        body: "<p>the Symbolics Document Examiner was first used for a hypertext implementation of the Symbolics manual, which was an 8000-page document that was represented in a 10000-node hyper document containing 23000 links in all. it used a hierarchical structure, which differed from other experimental hypertext systems. users could add bookmarks, which allowed returning to specific items easier, this method was later incorporated in graphical web browsers. the system also supported on-line substring searching.</p>",
       },
       {
         title: "intermedia",
-        desc: "the third notable hypertext project",
-        body: "",
+        desc: "early HTML",
+        body: "<p>intermedia was the third notable hypertext project to emerge from Brown University along with HES and FRESS. some of the materials that came from intermedia were used in the development of HTML. intermedia supported bi-directional, dual-anchor links for both text and graphics. small icons were used as anchor markers. intermedia properties included author, creation date, title, and keywords. link information was stored by the system apart from the source text. more than one such set of data could be kept, which allowed each user to have their own \"web\" of information. it had complete multi-user support, with three levels of access rights: read, write, and annotate.</p>",
       },
     ],
   },
