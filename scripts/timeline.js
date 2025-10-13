@@ -95,7 +95,7 @@ const timelineData = [
       {
         title: "Guide",
         desc: "a missed opportunity",
-        body: "",
+        body: "<p>the Guide system became the third hypertext system to be sold commercially. it was a low-cost hypertext word processor. Ian Ritchie, founder of OWL, who introduced the software, presented a TED talk in 2011 describing his missed opportunity to convert Guide to a graphical browser for the Web, titled \"The day I turned down Tim Berners-Lee\". unlike most hypertext systems, the main link mechanism in Guide was based on replacement, meaning that when following a link, the current node breaks open, making room for the destination node. the anchor of the link was replaced by the contents of the destination node, like an expanded node in an outliner, but without the restraint of a hierarchical outline. one could close the destination node, which meant that it was once again replaced by the text of the anchor. thus, the basic method of navigation using Guide was the expansion button, by which a section was replaced when selected and expansion provided additional levels of detail. this allowed the user to expand and contract a document, viewing the desired level at any time. it supported pop-ups for small annotations, and jumps, which behaved like the follow-link operation in most hypertexts. the jumps allowed for non-hierarchical link creation.</p>",
       },
     ],
   },
@@ -105,7 +105,7 @@ const timelineData = [
       {
         title: "HyperCard",
         desc: "a software erector set",
-        body: "",
+        body: "<p>HyperCard was a software application and development kit for Macintosh and IIGS computers. it was among the first successful hypermedia systems predating the World Wide Web. HyperCard combined a flat-file database with a graphical user-modifiable interface. it included a built-in programming language called HyperTalk for manipulating data and the user interface.</p>",
       },
     ],
   },
