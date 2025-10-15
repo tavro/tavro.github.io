@@ -10,27 +10,31 @@
     <script src="scripts/script.js"></script>
   </head>
   <body class="dark-mode">
-    <header class="">
-      <!-- TODO: alternative header, inspired by https://bjhess.com/ -->
-      <h1>
-        th@tavro:~/$ <span class="prompt"></span
-        ><span class="header-cursor"></span>
-      </h1>
-      <nav>
-        <ul>
-          <li><a id="explore" href="explore.html">&lt;explore/&gt;</a></li>
-        </ul>
-      </nav>
-      <nav>
-        <ul>
-          <li><span style="color:#6fcf6f;">└</span></li>
-          <li><a id="using" href="using.html">/using</a></li>
-          <li><a id="reading" href="reading.html">/reading</a></li>
-          <li>
-            <a id="favorites" href="#" class="active">&lt;favorites/&gt;</a>
-          </li>
-        </ul>
-      </nav>
+    <header>
+      <div class="alt-header">
+        <img src="res/profile-alt.png" />
+        <h1>
+          th@tavro:~/$ <span class="prompt"></span
+          ><span class="header-cursor"></span>
+        </h1>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a id="explore" href="explore.html">&lt;explore/&gt;</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><span style="color: #6fcf6f">└</span></li>
+            <li><a id="using" href="using.html">/using</a></li>
+            <li><a id="reading" href="reading.html">/reading</a></li>
+            <li>
+              <a id="favorites" href="#" class="active">&lt;favorites/&gt;</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="favorites">

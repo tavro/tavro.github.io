@@ -10,21 +10,25 @@
     <script src="scripts/resume.js"></script>
   </head>
   <body class="dark-mode">
-    <header class="">
-      <!-- TODO: alternative header, inspired by https://bjhess.com/ -->
-      <h1>
-        th@tavro:~/$ <span class="prompt">cat ~/resume.txt</span
-        ><span class="header-cursor"></span>
-      </h1>
-      <nav>
-        <ul>
-          <li><a id="home" href="index.html">/home</a></li>
-          <li><a id="resume" href="#" class="active">&lt;resume/&gt;</a></li>
-          <li><a id="blog" href="blog.html">/blog</a></li>
-          <li><a id="now" href="now.html">/now</a></li>
-          <li><a id="explore" href="explore.html">/explore</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="alt-header">
+        <img src="res/profile-alt.png" />
+        <h1>
+          th@tavro:~/$ <span class="prompt">cat ~/resume.txt</span
+          ><span class="header-cursor"></span>
+        </h1>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a id="home" href="index.html">/home</a></li>
+            <li><a id="resume" href="#" class="active">&lt;resume/&gt;</a></li>
+            <li><a id="blog" href="blog.html">/blog</a></li>
+            <li><a id="now" href="now.html">/now</a></li>
+            <li><a id="explore" href="explore.html">/explore</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="resume">
@@ -36,7 +40,7 @@
       <br />
       <div class="resume-intro">
         <h2>tyson horvath</h2>
-        <!-- TODO: print button -->
+        <!-- TODO: Add print button -->
         <small><span id="email"></span>@gmail.com</small>
 
         <p>

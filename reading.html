@@ -9,22 +9,32 @@
     <script src="scripts/common.js"></script>
   </head>
   <body class="dark-mode">
-    <header class="">
-      <!-- TODO: alternative header, inspired by https://bjhess.com/ -->
-      <h1>th@tavro:~/$ <span class="prompt">grep -i "title" ~/reading_list.txt</span><span class="header-cursor"></span></h1>
-      <nav>
-        <ul>
-          <li><a id="explore" href="explore.html">&lt;explore/&gt;</a></li>
-        </ul>
-      </nav>
-      <nav>
-        <ul>
-          <li><span style="color:#6fcf6f;">└</span></li>
-          <li><a id="using" href="using.html">/using</a></li>
-          <li><a id="reading" href="#" class="active">&lt;reading/&gt;</a></li>
-          <li><a id="favorites" href="favorites.html">/favorites</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="alt-header">
+        <img src="res/profile-alt.png" />
+        <h1>
+          th@tavro:~/$
+          <span class="prompt">grep -i "title" ~/reading_list.txt</span
+          ><span class="header-cursor"></span>
+        </h1>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a id="explore" href="explore.html">&lt;explore/&gt;</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><span style="color: #6fcf6f">└</span></li>
+            <li><a id="using" href="using.html">/using</a></li>
+            <li>
+              <a id="reading" href="#" class="active">&lt;reading/&gt;</a>
+            </li>
+            <li><a id="favorites" href="favorites.html">/favorites</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="reading">
@@ -38,7 +48,7 @@
         past.
       </p>
       <ul>
-        <li><!-- TODO: Make stars white -->
+        <li>
           <a href="https://www.ronpadgett.com/BigCabin.htm">★★★★★ big cabin</a>
           <small>by ron padgett</small>
         </li>

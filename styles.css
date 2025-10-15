@@ -545,3 +545,16 @@ input[type="range"]::-moz-range-thumb {
 #event-slider:empty {
   display: none;
 }
+
+.alt-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.alt-header img {
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+  margin-top: 8px;
+}
